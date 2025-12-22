@@ -212,7 +212,11 @@ useEffect(()=>{
 }
 
 const ProductCard = ({ product }) => {
+  /*Set render of data*/
   const [eurorate,setEuroRate] = useState(1)
+  const [isloading,setIsLoading] = useState(true)
+  const [errmsg, setErrMsg] useState(null)
+  
   const hasVariants = product.variants && product.variants.length > 0;
   
   // Inicializa la variante seleccionada con la primera variante si existen
@@ -222,12 +226,13 @@ const ProductCard = ({ product }) => {
 
 
   useEffect(()=>{
-
     function async getEuroRate(){
       const res =  await fetch('https://backendsalessys.onrender.com/api/v1/euro/')
       const data = await res.JSON()
       console.log(data)
+      //setEuroRate
     }
+    getEuroRate()
   },[])
 
   // Lógica para el botón de Añadir al Carrito
