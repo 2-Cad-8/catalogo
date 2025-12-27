@@ -359,13 +359,13 @@ export const productos =[
         "variant_image_url": "public/productos/correas_blancas.jpg"
       },
        {
-        "variant_id": "CDB",
+        "variant_id": "CDN",
         "type": "color",
         "value": "#000000",
         "name": "Negro",
         "stock": 6,
         "variant_price_adjust": 0.00,
-        "variant_image_url": "public/productos/correa_de_dama_negra.jpg"
+        "variant_image_url": "public/productos/correa_dama_negra.jpg"
       },
         
                {
@@ -483,7 +483,8 @@ export const productos =[
         "units": 1,
         "price": 23.0,
         "category": "carteras y bolsos",
-        "delete": 0
+        "delete": 0,
+        "image_url":"public/productos/tote_bag_negra.jpg"
     },
     {
         "id": 46,
@@ -502,7 +503,8 @@ export const productos =[
         "units": 1,
         "price": 27.0,
         "category": "carteras y bolsos",
-        "delete": 0
+        "delete": 0,
+        "image_url":"public/productos/tote_bag_con_bolsito_1.png"
     },
     {
         "id": 19,
@@ -511,7 +513,8 @@ export const productos =[
         "units": 5,
         "price": 7.0,
         "category": "accesorios para caballeros",
-        "delete": 0
+        "delete": 0,
+        "image_url":"public/productos/anillos_de_caballero_piedra_redonda_1.jpg"
     },
     {
         "id": 56,
@@ -532,7 +535,8 @@ export const productos =[
         "units": 4,
         "price": 6.0,
         "category": "accesorios para caballeros",
-        "delete": 0
+        "delete": 0,
+        "image_url":"public/productos/anillos_de_caballero.jpg"
     },
     {
         "id": 61,
@@ -605,6 +609,7 @@ export const productos =[
         "price": 13.0,
         "category": "billeteras",
         "delete": 0,
+        "image_url":"public/productos/billetera_caballero.jpg"
         
     },
     {
@@ -614,10 +619,11 @@ export const productos =[
         "units": 0,
         "price": 29.0,
         "category": "accesorios para dama",
-        "delete": 0
+        "delete": 0,
+        "image_url":"public/productos/bandejas_de_accesorios_gris.jpg"
     },
   
-    {
+   /* {
         "id": 42,
         "cod_product": "CBN",
         "name": "Cartera Boho ",
@@ -644,7 +650,7 @@ export const productos =[
         "variant_image_url": "https://placehold.co/400x300/6B7280/ffffff?text=Gris+Grafito"
       }
         ]
-    },
+    },*/
     {
         "id": 75,
         "cod_product": "BM",
@@ -670,9 +676,29 @@ export const productos =[
         "cod_product": "PDC",
         "name": "Pulseras de Caballero",
         "units": 10,
-        "price": 11.0,
+        "price": 12.0,
         "category": "accesorios para caballeros",
-        "delete": 0
+        "delete": 0,
+        "variants":[
+            {
+                "variant_id": "PDC1",
+                "type": "color",
+                "value": "#000000",
+                "name": "Tipo 1",
+                "stock": 6,
+                "variant_price_adjust": 0.00,
+                "variant_image_url": "public/productos/pulseras_caballero_tipo1.jpg"
+      },
+         {
+                "variant_id": "PDC2",
+                "type": "color",
+                "value": "#000000",
+                "name": "Tipo 2",
+                "stock": 6,
+                "variant_price_adjust": 0.00,
+                "variant_image_url": "public/productos/pulseras_caballero_tipo2.jpg"
+      }
+        ]
     },
     {
         "id": 54,
@@ -681,16 +707,46 @@ export const productos =[
         "units": 3,
         "price": 8.0,
         "category": "accesorios para caballeros",
-        "delete": 0
+        "delete": 0,
+        "image_url":"public/productos/cadena_de_Caballero.jpg"
     },
     {
         "id": 57,
         "cod_product": "BHG",
-        "name": "Bolsas Holograficas Grandes (pack 50 Und)",
+        "name": "Bolsas Holograficas (pack 50 Und)",
         "units": 2,
         "price": 15.0,
         "category": "papeleria",
-        "delete": 0
+        "delete": 0,
+        "variants":[
+                 {
+        "variant_id": "BHG",
+        "type": "color",
+        "value": "#000000",
+        "name": "bolsas grandes",
+        "stock": 1,
+        "variant_price_adjust": 0.00,
+        "variant_image_url": "public/productos/bolsas_holograficas.jpg"
+      },
+               {
+        "variant_id": "BHM",
+        "type": "color",
+        "value": "#000000",
+        "name": "bolsas medianas",
+        "stock": 1,
+        "variant_price_adjust": 0.00,
+        "variant_image_url": "public/productos/bolsas_holograficas.jpg"
+      },
+               {
+        "variant_id": "BHP",
+        "type": "color",
+        "value": "#000000",
+        "name": "bolsas pequeñas",
+        "stock": 1,
+        "variant_price_adjust": 0.00,
+        "variant_image_url": "public/productos/bolsas_holograficas.jpg"
+      }
+        ]
     },
   
     {
@@ -700,7 +756,27 @@ export const productos =[
         "units": 4,
         "price": 7.0,
         "category": "carteras y bolsos",
-        "delete": 0
+        "delete": 0,
+        "variants":[
+              {
+                "variant_id": "SCF1",
+                "type": "color",
+                "value": "#000000",
+                "name": "Tipo 1",
+                "stock": 6,
+                "variant_price_adjust": 0.00,
+                "variant_image_url": "public/productos/straps_de_cartera_finos_1.jpg"
+      },
+        {
+                "variant_id": "SCF2",
+                "type": "color",
+                "value": "#000000",
+                "name": "Tipo 2",
+                "stock": 6,
+                "variant_price_adjust": 0.00,
+                "variant_image_url": "public/productos/straps_de_cartera_finos_2.jpg"
+      }
+        ]
     },
     {
         "id": 7,
@@ -709,10 +785,11 @@ export const productos =[
         "units": 2,
         "price": 35.0,
         "category": "haircare",
-        "delete": 0
+        "delete": 0,
+        "image_url":"public/productos/kit_para_rizos.jpg"
     },
 
-    {
+   /* {
         "id": 82,
         "cod_product": "LSH",
         "name": "Lentes de Sol Hexagonales",
@@ -720,7 +797,7 @@ export const productos =[
         "price": 10.0,
         "category": "lentes de sol",
         "delete": 0
-    },
+    },*/
     {
         "id": 83,
         "cod_product": "LST",
@@ -728,16 +805,37 @@ export const productos =[
         "units": 3,
         "price": 12.0,
         "category": "lentes de sol",
-        "delete": 0
+        "delete": 0,
+        "image_url":"public/productos/lentes_transformer.jpg"
     },
     {
         "id": 84,
-        "cod_product": "GDSR",
-        "name": "Gorro de Satin Rosa",
+        "cod_product": "GDS",
+        "name": "Gorro de Satin",
         "units": 2,
         "price": 6.0,
         "category": "haircare",
-        "delete": 0
+        "delete": 0,
+        "variants":[
+            {
+                "variant_id": "GDSR",
+                "type": "color",
+                "value": "#000000",
+                "name": "Rosa",
+                "stock": 1,
+                "variant_price_adjust": 0.00,
+                "variant_image_url": "public/productos/gorros de satin_rosado.png"
+      },
+       {
+                "variant_id": "GDSN",
+                "type": "color",
+                "value": "#000000",
+                "name": "Negro",
+                "stock": 1,
+                "variant_price_adjust": 0.00,
+                "variant_image_url": "public/productos/gorros de satin_negro.png"
+      }
+        ]
     },
     {
         "id": 86,
@@ -746,9 +844,38 @@ export const productos =[
         "units": 3,
         "price": 6.0,
         "category": "papeleria",
-        "delete": 0
+        "delete": 0,
+        "variants":[
+            {
+                "variant_id": "CE1",
+                "type": "modelo",
+                "value": "#000000",
+                "name": "Pata de gato",
+                "stock": 1,
+                "variant_price_adjust": 0.00,
+                "variant_image_url": "public/productos/cartuchera_pataGato_1.png"
+      },
+         {
+                "variant_id": "CE2",
+                "type": "modelo",
+                "value": "#000000",
+                "name": "fresas",
+                "stock": 1,
+                "variant_price_adjust": 0.00,
+                "variant_image_url": "public/productos/cartuchera_fresas_2.png"
+      },
+         {
+                "variant_id": "CE3",
+                "type": "modelo",
+                "value": "#000000",
+                "name": "Gatos",
+                "stock": 1,
+                "variant_price_adjust": 0.00,
+                "variant_image_url": "public/productos/cartuchera_gatos1_2.png"
+      }
+        ]
     },
-    {
+   /* {
         "id": 87,
         "cod_product": "BHM",
         "name": "Bolsas Holograficas Medianas (Pack 50 unid)",
@@ -756,8 +883,8 @@ export const productos =[
         "price": 10.0,
         "category": "papeleria",
         "delete": 0
-    },
-    {
+    },*/
+  /*  {
         "id": 88,
         "cod_product": "TPP",
         "name": "Tarjetas para Presupuesto",
@@ -765,7 +892,7 @@ export const productos =[
         "price": 3.0,
         "category": "papeleria",
         "delete": 0
-    },
+    },*/
     {
         "id": 89,
         "cod_product": "SPAF",
@@ -773,7 +900,8 @@ export const productos =[
         "units": 3,
         "price": 6.0,
         "category": "papeleria",
-        "delete": 0
+        "delete": 0,
+        "image_url":"public/productos/sobres_para_agenda_financiera.jpg"
     },
     {
         "id": 90,
@@ -782,7 +910,8 @@ export const productos =[
         "units": 2,
         "price": 15.0,
         "category": "carteras y bolsos",
-        "delete": 0
+        "delete": 0,
+        "image_url":"public/productos/cartera_ima.jpg"
     },
     {
         "id": 52,
@@ -864,7 +993,7 @@ export const productos =[
         "image_url": "../public/productos/monedero_largo_rojo_bourbon.jpg",
       }
     ,
-    {
+   /* {
         "id": 85,
         "cod_product": "GDSN",
         "name": "Gorro de Satin Negro",
@@ -880,5 +1009,5 @@ export const productos =[
         "price": 16.0,
         "category": "carteras y bolsos",
         "delete": 0
-    },
+    },*/
 ]

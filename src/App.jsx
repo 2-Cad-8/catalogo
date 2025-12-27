@@ -1,153 +1,6 @@
 
 import {productos} from './products' 
-const productsData = [
-  {
-    "id": 101,
-    "name": "Tarjetero Rosa",
-    "sku_base": "SLC-ESC-001",
-    "price": 9.00,
-    "description": "Tarjeteros con capacidad para 5 tarjetas",
-    "category": "Muebles de Sala",
-    "image_url": "https://placehold.co/400x300/60a5fa/ffffff?text=Imagen+Base+Producto+1",
-    
-    "variants": [
-      {
-        "variant_id": "V101A",
-        "type": "color",
-        "value": "#ffb6efff",
-        "name": "Rosa",
-        "stock": 15,
-        "variant_price_adjust": 0.00,
-        "variant_image_url": "https://placehold.co/400x300/6B7280/ffffff?text=Gris+Grafito"
-      },
-      {
-        "variant_id": "V101B",
-        "type": "color",
-        "value": "#b7ffbbff",
-        "name": "Verde Lima",
-        "stock": 0,
-        "variant_price_adjust": 15.00,
-        "variant_image_url": "https://placehold.co/400x300/15803d/ffffff?text=Verde+Oliva"
-      },
-      {
-        "variant_id": "V101C",
-        "type": "color",
-        "value": "#82d2e6ff",
-        "name": "Azul Cielo",
-        "stock": 8,
-        "variant_price_adjust": 0.00,
-        "variant_image_url": "https://placehold.co/400x300/FCD34D/000000?text=Mostaza"
-      }
-    ]
-  },
-   {
-    "id": 101,
-    "name": "Tarjetero Rosa",
-    "sku_base": "SLC-ESC-001",
-    "price": 9.00,
-    "description": "Tarjeteros con capacidad para 5 tarjetas",
-    "category": "Muebles de Sala",
-    "image_url": "https://placehold.co/400x300/60a5fa/ffffff?text=Imagen+Base+Producto+1",
-    
-    "variants": [
-      {
-        "variant_id": "V101A",
-        "type": "color",
-        "value": "#ffb6efff",
-        "name": "Rosa",
-        "stock": 15,
-        "variant_price_adjust": 0.00,
-        "variant_image_url": "https://placehold.co/400x300/6B7280/ffffff?text=Gris+Grafito"
-      },
-      {
-        "variant_id": "V101B",
-        "type": "color",
-        "value": "#b7ffbbff",
-        "name": "Verde Lima",
-        "stock": 0,
-        "variant_price_adjust": 15.00,
-        "variant_image_url": "https://placehold.co/400x300/15803d/ffffff?text=Verde+Oliva"
-      },
-      {
-        "variant_id": "V101C",
-        "type": "color",
-        "value": "#82d2e6ff",
-        "name": "Azul Cielo",
-        "stock": 8,
-        "variant_price_adjust": 0.00,
-        "variant_image_url": "https://placehold.co/400x300/FCD34D/000000?text=Mostaza"
-      }
-    ]
-  },
-  {
-    "id": 202,
-    "name": "Lámpara de Pie Industrial",
-    "sku_base": "LMP-IND-005",
-    "price": 89.99,
-    "description": "Diseño metálico con bombilla expuesta. Estilo vintage.",
-    "category": "Iluminación",
-    "image_url": "https://placehold.co/400x300/f87171/000000?text=Imagen+Base+Producto+2",
-    
-    "variants": null  // Producto simple
-  },
-  
-  {
-    "id": 303,
-    "name": "Set de Toallas de Algodón Pima",
-    "sku_base": "TOW-PIM-010",
-    "price": 65.00,
-    "description": "Máxima suavidad y absorción garantizada por algodón Pima.",
-    "category": "Baño",
-    "image_url": "https://placehold.co/400x300/34d399/000000?text=Imagen+Base+Producto+3",
-    
-    "variants": [
-      {
-        "variant_id": "V303A",
-        "type": "color",
-        "value": "#DBEAFE",
-        "name": "Azul Cielo",
-        "stock": 25,
-        "variant_price_adjust": 0.00
-      },
-      {
-        "variant_id": "V303B",
-        "type": "color",
-        "value": "#E0F2F1",
-        "name": "Blanco Puro",
-        "stock": 30,
-        "variant_price_adjust": 0.00
-      }
-    ]
-  },
-   {
-    "id": 303,
-    "name": "Set de Toallas de Algodón Pima",
-    "sku_base": "TOW-PIM-010",
-    "price": 65.00,
-    "description": "Máxima suavidad y absorción garantizada por algodón Pima.",
-    "category": "Baño",
-    "image_url": "https://placehold.co/400x300/34d399/000000?text=Imagen+Base+Producto+3",
-    
-    "variants": [
-      {
-        "variant_id": "V303A",
-        "type": "color",
-        "value": "#DBEAFE",
-        "name": "Azul Cielo",
-        "stock": 25,
-        "variant_price_adjust": 0.00
-      },
-      {
-        "variant_id": "V303B",
-        "type": "color",
-        "value": "#E0F2F1",
-        "name": "Blanco Puro",
-        "stock": 30,
-        "variant_price_adjust": 0.00
-      }
-    ]
-  }
-];
+
 import { faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import  { useState, useEffect, useMemo } from 'react';
@@ -157,6 +10,11 @@ function App() {
   const [selectedFilter,setSelectedFilter] = useState('todo')
   const [displayProducts,setDisplayProducts] = useState(products)
 
+  const [eurorate,setEuroRate] = useState(1)
+  const [isLoading,setIsLoading] = useState(true)
+  const [errMsg, setErrMsg] = useState('')
+
+
   function handleSelectFilter(category){
     console.info(category)
     if(category.toLowerCase()===selectedFilter.toLowerCase()){return
@@ -165,6 +23,26 @@ function App() {
     setSelectedFilter(category)
   }
 }
+
+useEffect(()=>{
+
+     async function  getEuroRate(){
+      try{
+        const res =  await fetch('https://backendsalessys.onrender.com/api/v1/euro/')
+        const data = await res.json()
+        setEuroRate(data.rate)
+        console.info(data)
+        setIsLoading(false)
+      }catch(err){
+        setErrMsg(err)
+      }finally{
+        setIsLoading(false)
+        setErrMsg("")
+      }
+    }
+    getEuroRate()
+  },[])
+
 useEffect(()=>{
   function filterProducts(filter){
     if(filter.toLowerCase()==='todo'){ 
@@ -200,9 +78,11 @@ useEffect(()=>{
         {/* FILTROS PARA MOSTRAR PRODUCTOS POR CATEGORIAS */}
           <FilterCategories filter={selectedFilter} onSelectFilter={handleSelectFilter}/>
           <div className=' flex justify-start gap-x-4 gap-y-6 max-w-7xl flex-wrap'>
-            {displayProducts && displayProducts.map((product)=>{
-              return(<ProductCard key={product.id} product={product}/>)
+            {isLoading && <p>Cargando...</p>}
+            {!isLoading && !errMsg && displayProducts && displayProducts.map((product)=>{
+              return(<ProductCard key={product.id} product={product} rate={eurorate}/>)
             })}
+            {errMsg && <p>Error: {errMsg}</p>}
           </div>
         </main>
       </div>
@@ -211,8 +91,8 @@ useEffect(()=>{
   )
 }
 
-const ProductCard = ({ product }) => {
-  const [eurorate,setEuroRate] = useState(1)
+const ProductCard = ({ product, rate }) => {
+  
   const hasVariants = product.variants && product.variants.length > 0;
   
   // Inicializa la variante seleccionada con la primera variante si existen
@@ -221,14 +101,7 @@ const ProductCard = ({ product }) => {
   );
 
 
-  useEffect(()=>{
-
-    function async getEuroRate(){
-      const res =  await fetch('https://backendsalessys.onrender.com/api/v1/euro/')
-      const data = await res.JSON()
-      console.log(data)
-    }
-  },[])
+  
 
   // Lógica para el botón de Añadir al Carrito
   const handleAddToCart = () => {
@@ -241,7 +114,7 @@ const ProductCard = ({ product }) => {
     };
     console.log("Producto añadido al carrito:", item);
     // Aquí iría la lógica real para añadir a un estado global o a una API
-  };
+  }
 
   // Renderiza los selectores de color si existen variantes
   const renderVariantSelectors = () => {
@@ -302,7 +175,7 @@ const ProductCard = ({ product }) => {
         {/* Nombre y Precio */}
         <div className='flex justify-between gap-x-4'>
         <h2 className="card-title text-gray-800 text-xl mb-1">{product.name}</h2>
-        <p className="text-3xl font-bold text-slate-700 mb-2">${product.price.toFixed(2)}</p>
+        <p className="text-3xl font-bold text-slate-700 mb-2">{(product.price*rate).toFixed(2)}bs</p>
         </div>
         
         {/* Descripción */}
