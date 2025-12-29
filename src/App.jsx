@@ -94,7 +94,10 @@ useEffect(()=>{
 const ProductCard = ({ product, rate }) => {
   
   const hasVariants = product.variants && product.variants.length > 0;
-  
+  const handleBuyOnWhatsApp= (product)=>{
+    const msg = `Hola! vengo del catalogo, estoy interesada en el ${product}`
+    return encodeURIComponent(msg)
+  }
   // Inicializa la variante seleccionada con la primera variante si existen
   const [selectedVariant, setSelectedVariant] = useState(
     hasVariants != undefined ? product.variants[0] : null
@@ -174,31 +177,40 @@ const ProductCard = ({ product, rate }) => {
         
         {/* Nombre y Precio */}
         <div className='flex justify-between gap-x-4'>
-        <h2 className="card-title text-gray-800 text-xl mb-1">{product.name}</h2>
+       
         <p className="text-3xl font-bold text-slate-700 mb-2">{(product.price*rate).toFixed(2)}bs</p>
         </div>
-        
+         <h2 className="card-title text-gray-800 text-xl mb-1">{product.name}</h2>
         {/* Descripción */}
-        {
-/*
-        <p className="text-sm text-gray-500   h-4 overflow-hidden">{product.description}</p>
-        */}
+        
+
+        <p className="text-sm text-gray-500   h-4 overflow-hidden">Para mas informacion haz clic en comprar</p>
+        
         
         {/* Selectores de Variantes (Renderizado Condicional) */}
         {renderVariantSelectors()}
 
         <div className="card-actions flex flex-nowrap  justify-center mt-2 pt-4 border-t border-gray-100 w-full">
-          <button 
+          {/*<button 
           className="btn btn-md font-semibold rounded-full transition duration-300 border-slate-700 border-2 text-slate-700"
             /*onClick={handleAddToCart}
             className={`btn btn-block font-semibold transition duration-300 ${isOutOfStock ? 'btn-disabled bg-gray-300 text-gray-500' : 'btn-primary hover:bg-indigo-700'}`}
-            disabled={isOutOfStock}*/
+            disabled={isOutOfStock}
           >
-          Agregar al carrito
+          Agregar al carrito */}
            {/* <ShoppingCart className="w-5 h-5" />
-            {isOutOfStock ? 'Producto Agotado' : 'Añadir al Carrito'}*/}
-          </button>
-          <button className='btn btn-md font-semibold rounded-full transition duration-300 border-slate-700 border-2  text-slate-700'>Comprar</button>
+            {isOutOfStock ? 'Producto Agotado' : 'Añadir al Carrito'}
+          </button>*/}
+         {/* <button 
+         className='btn btn-md font-semibold rounded-full transition duration-300 border-slate-700 border-2  text-slate-700'>*/}
+          <a className='btn btn-md w-full text-lg font-semibold rounded-full transition duration-300 border-slate-700 border-2  text-slate-700' href={`https://api.whatsapp.com/send/?phone=%2B584245103321&text=${handleBuyOnWhatsApp(product.name)}`}>
+            Comprar
+          </a>
+          {
+            /*
+            </button>
+             */
+          }
         </div>
       </div>
     </div>

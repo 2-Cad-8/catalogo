@@ -12,7 +12,7 @@ export const productos =[
       {
         "variant_id": "TA",
         "type": "color",
-        "value": "#ffb6efff",
+        "value": "#8fc0db",
         "name": "Azul cielo",
         "stock": 6,
         "variant_price_adjust": 0.00,
@@ -30,7 +30,7 @@ export const productos =[
         {
         "variant_id": "TVC",
         "type": "color",
-        "value": "#000000",
+        "value": "#c2e6ac",
         "name": "Verde Lima",
         "stock": 6,
         "variant_price_adjust": 0.00,
@@ -39,8 +39,8 @@ export const productos =[
         {
         "variant_id": "TVO",
         "type": "color",
-        "value": "#000000",
-        "name": "Verde Esmeralda",
+        "value": "#0b290f",
+        "name": "Verde Navidad",
         "stock": 6,
         "variant_price_adjust": 0.00,
         "variant_image_url": "public/productos/tarjetero_verde_navidad.jpg"
@@ -48,7 +48,7 @@ export const productos =[
        {
         "variant_id": "TB",
         "type": "color",
-        "value": "#000000",
+        "value": "#bfb58a",
         "name": "Beige",
         "stock": 6,
         "variant_price_adjust": 0.00,
@@ -57,7 +57,7 @@ export const productos =[
        {
         "variant_id": "TRA",
         "type": "color",
-        "value": "#000000",
+        "value": "#facde0",
         "name": "Rosa",
         "stock": 6,
         "variant_price_adjust": 0.00,
@@ -66,7 +66,7 @@ export const productos =[
        {
         "variant_id": "TRO",
         "type": "color",
-        "value": "#000000",
+        "value": "#cc1023",
         "name": "Rojo",
         "stock": 6,
         "variant_price_adjust": 0.00,
