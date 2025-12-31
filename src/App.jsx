@@ -14,6 +14,8 @@ function App() {
   const [isLoading,setIsLoading] = useState(true)
   const [errMsg, setErrMsg] = useState('')
 
+    const localRate =handleGetLocalRate()
+    const today = new Date().toISOString().split('T')[0];
 
   function handleSelectFilter(category){
     console.info(category)
@@ -24,6 +26,17 @@ function App() {
   }
 }
 
+  function handleSetLocalRate(rate){
+    const rateData = {'rate':rate, "date":new Date().toISOString().split('T')[0]}
+    window.localStorage.setItem('rate',JSON.stringify(rateData))
+
+  }
+
+   function handleGetLocalRate(){
+    const rateData = JSON.parse(window.localStorage.getItem('rate'))
+    return rateData
+  }
+
 useEffect(()=>{
 
      async function  getEuroRate(){
@@ -32,6 +45,7 @@ useEffect(()=>{
         const data = await res.json()
         setEuroRate(data.rate)
         console.info(data)
+        handleSetLocalRate(data.rate)
         setIsLoading(false)
       }catch(err){
         setErrMsg(err)
@@ -40,7 +54,20 @@ useEffect(()=>{
         setErrMsg("")
       }
     }
-    getEuroRate()
+  
+  
+    if(localRate.rate !=null){
+
+      if(localRate.date != today){
+        getEuroRate()
+      }else{
+        console.info('using local rate')
+        setEuroRate(localRate.rate)
+        setIsLoading(false)
+      }
+    }else{
+        getEuroRate()
+      }
   },[])
 
 useEffect(()=>{
@@ -64,12 +91,12 @@ useEffect(()=>{
       <nav className='flex justify-between px-18 my-4 bg-beige h-18 mt-0 items-center'>
       <h1 className='font-semibold text-xl color-slate-700'>Dalaz Shop</h1>
       <div className='flex gap-x-2 items-center pe-12'>
-      <button className='btn btn-circle border-none bg-beige hover:bg-slate-700 hover:text-white'>
+      <a href='https://www.instagram.com/dalazshopve?igsh=dHFwaXprc3Z1OWNu' className='btn btn-circle border-none bg-beige hover:bg-slate-700 hover:text-white'>
         <span><FontAwesomeIcon icon={faInstagram} size='lg'/></span>
-      </button>
-      <button className='btn btn-circle bg-beige border-none hover:bg-slate-700 hover:text-white'>
+      </a>
+      <a href='https://www.tiktok.com/@dalazshopve?_r=1&_t=ZM-92goKgChWQN' className='btn btn-circle bg-beige border-none hover:bg-slate-700 hover:text-white'>
         <span><FontAwesomeIcon icon={faTiktok} size='lg'/></span>
-      </button>
+      </a>
         
       </div>
       </nav>
