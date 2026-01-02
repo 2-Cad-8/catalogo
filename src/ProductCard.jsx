@@ -77,7 +77,7 @@ export const ProductCard = ({ product, rate }) => {
           onError={(e) => { e.target.onerror = null; e.target.src = "https://placehold.co/400x300/374151/ffffff?text=Image+Missing"; }} />
         {product.units === 0 && (
                 <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
-                    <span className="badge badge-error text-white text-lg p-3">Agotado</span>
+                    <span className="badge badge-error text-white text-lg font-semibold p-3.5">Agotado</span>
                 </div>
             )}
 
