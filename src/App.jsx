@@ -55,8 +55,8 @@ useEffect(()=>{
         setErrMsg("")
       }
     }
-  
-  
+    setIsLoading(false);
+  /*
     if(localRate !=null){
 
       if(localRate.date != today){
@@ -68,7 +68,7 @@ useEffect(()=>{
       }
     }else{
         getEuroRate()
-      }
+      }*/
   },[])
 
 useEffect(()=>{
@@ -108,7 +108,7 @@ useEffect(()=>{
           <div className=' flex justify-start gap-x-4 gap-y-6 max-w-7xl flex-wrap'>
             {isLoading && <p>Cargando...</p>}
             {!isLoading && !errMsg && displayProducts && displayProducts.map((product)=>{
-              return(<ProductCard key={product.id} product={product} rate={eurorate}/>)
+              return(<ProductCard key={product.id} product={product} rate={eurorate&&1}/>)
             })}
             {errMsg && <p>Error: {errMsg}</p>}
           </div>

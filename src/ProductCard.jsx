@@ -88,7 +88,7 @@ export const ProductCard = ({ product, rate }) => {
         {/* Nombre y Precio */}
         <div className='flex justify-between gap-x-4'>
 
-          <p className="text-3xl font-bold text-slate-700 mb-2">{(product.price * rate).toFixed(2)}bs</p>
+          {/*<p className="text-3xl font-bold text-slate-700 mb-2">{(product.price * rate).toFixed(2)}bs</p>*/}
         </div>
         <h2 className="card-title text-gray-800 text-xl mb-1">{product.name}</h2>
         {/* Descripción */}
@@ -113,7 +113,7 @@ export const ProductCard = ({ product, rate }) => {
            </button>*/}
           {/* <button
             className='btn btn-md font-semibold rounded-full transition duration-300 border-slate-700 border-2  text-slate-700'>*/}
-          <a className='btn btn-md w-full text-lg font-semibold rounded-full transition duration-300 border-slate-700 border-2  text-slate-700' href={`https://api.whatsapp.com/send/?phone=%2B584245103321&text=${handleBuyOnWhatsApp(product.name)}`}>
+          <a className='btn btn-md w-full text-lg font-semibold rounded-full transition duration-300 border-slate-700 border-2  text-slate-700' href={`https://api.whatsapp.com/send/?phone=%2B584140739409&text=${handleBuyOnWhatsApp(product.name)}`}>
             Comprar
           </a>
           {

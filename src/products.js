@@ -109,7 +109,7 @@ export const productos =[
         "id": 17,
         "cod_product": "MLAN",
         "name": "Monedero Largo Negro",
-        "units": 1,
+        "units": 0,
         "price": 12.0,
         "category": "monederos",
         "delete": 0,
@@ -123,7 +123,7 @@ export const productos =[
         "price": 12.0,
         "category": "skincare",
         "delete": 0,
-        "image_url":"productos/set_de_skincare.jpg"
+        "image_url":"productos/set_de_skincare.webp"
     },
     {
         "id": 22,
@@ -133,7 +133,7 @@ export const productos =[
         "price": 23.0,
         "category": "carteras y bolsos",
         "delete": 0,
-        "image_url":"productos/tote_clasica.jpg"
+        "image_url":"productos/tote_clasica.webp"
     },
    
     {
@@ -151,12 +151,12 @@ export const productos =[
     {
         "id": 36,
         "cod_product": "COBL",
-        "name": "Cartera Oval Blanco",
+        "name": "Cartera Oval Blanca",
         "units": 1,
         "price": 17.0,
         "category": "carteras y bolsos",
         "delete": 0,
-        "image_url":"productos/cartera_oval_blanca.png"
+        "image_url":"productos/cartera_oval_blanca.webp"
     },
     {
         "id": 37,
@@ -187,7 +187,7 @@ export const productos =[
         "price": 7.0,
         "category": "tecnología",
         "delete": 0,
-        "image_url":"productos/strap_tlf.jpg"
+        "image_url":"productos/strap_tlf.webp"
     },
     {
         "id": 47,
@@ -197,7 +197,7 @@ export const productos =[
         "price": 6.0,
         "category": "accesorios para termos",
         "delete": 0,
-        "image_url":"productos/bota_tapa_pitillo.jpg"
+        "image_url":"productos/bota_tapa_pitillo.webp"
     },
     {
         "id": 48,
@@ -252,11 +252,11 @@ export const productos =[
         "id": 62,
         "cod_product": "CRNLM",
         "name": "Cartera Rectangular Negra Lisa Mediana",
-        "units": 1,
+        "units": 0,
         "price": 30.0,
         "category": "carteras y bolsos",
         "delete": 0,
-        "image_url":"productos/cartera_rectangular_mediana_negra.png"
+        "image_url":"productos/cartera_rectangular_mediana_negra.webp"
     },
     {
         "id": 63,
@@ -281,12 +281,12 @@ export const productos =[
     {
         "id": 67,
         "cod_product": "CNL",
-        "name": "Cartera Negra Tipo Lonchera",
+        "name": "Cartera Lunch",
         "units": 1,
         "price": 30.0,
         "category": "carteras y bolsos",
         "delete": 0,
-        "image_url":"productos/cartera_tipo_lonchera_negra.png"
+        "image_url":"productos/cartera_tipo_lonchera_negra.webp"
 
     },
     {
@@ -484,7 +484,7 @@ export const productos =[
         "price": 23.0,
         "category": "carteras y bolsos",
         "delete": 0,
-        "image_url":"productos/tote_bag_negra.jpg"
+        "image_url":"productos/tote_bag_negra.webp"
     },
     {
         "id": 46,
@@ -504,7 +504,7 @@ export const productos =[
         "price": 27.0,
         "category": "carteras y bolsos",
         "delete": 0,
-        "image_url":"productos/tote_bag_con_bolsito_1.png"
+        "image_url":"productos/tote_bag_con_bolsito_1.webp"
     },
     {
         "id": 19,
@@ -557,7 +557,7 @@ export const productos =[
         "price": 11.0,
         "category": "carteras y bolsos",
         "delete": 0,
-        "image_url":"productos/straps_gruesos.jpg"
+        "image_url":"productos/straps_gruesos.webp"
     },
     {
         "id": 1,
@@ -669,7 +669,7 @@ export const productos =[
         "price": 6.0,
         "category": "accesorios para caballeros",
         "delete": 0,
-        "image_url":"productos/pulsera_de_caballero_inmantada_duo.jpg"
+        "image_url":"productos/pulsera_de_caballero_inmantada_duo.webp"
     },
     {
         "id": 5,
@@ -687,7 +687,7 @@ export const productos =[
                 "name": "Tipo 1",
                 "stock": 6,
                 "variant_price_adjust": 0.00,
-                "variant_image_url": "productos/pulseras_caballero_tipo1.jpg"
+                "variant_image_url": "productos/pulseras_caballero_tipo1.webp"
       },
          {
                 "variant_id": "PDC2",
@@ -696,7 +696,7 @@ export const productos =[
                 "name": "Tipo 2",
                 "stock": 6,
                 "variant_price_adjust": 0.00,
-                "variant_image_url": "productos/pulseras_caballero_tipo2.jpg"
+                "variant_image_url": "productos/pulseras_caballero_tipo2.webp"
       }
         ]
     },
@@ -765,7 +765,7 @@ export const productos =[
                 "name": "Tipo 1",
                 "stock": 6,
                 "variant_price_adjust": 0.00,
-                "variant_image_url": "productos/straps_de_cartera_finos_1.jpg"
+                "variant_image_url": "productos/straps_de_cartera_finos_1.webp"
       },
         {
                 "variant_id": "SCF2",
@@ -774,7 +774,7 @@ export const productos =[
                 "name": "Tipo 2",
                 "stock": 6,
                 "variant_price_adjust": 0.00,
-                "variant_image_url": "productos/straps_de_cartera_finos_2.jpg"
+                "variant_image_url": "productos/straps_de_cartera_finos_2.webp"
       }
         ]
     },
@@ -824,7 +824,7 @@ export const productos =[
                 "name": "Rosa",
                 "stock": 1,
                 "variant_price_adjust": 0.00,
-                "variant_image_url": "productos/gorros de satin_rosado.png"
+                "variant_image_url": "productos/gorros de satin_rosado.webp"
       },
        {
                 "variant_id": "GDSN",
@@ -833,7 +833,7 @@ export const productos =[
                 "name": "Negro",
                 "stock": 1,
                 "variant_price_adjust": 0.00,
-                "variant_image_url": "productos/gorros de satin_negro.png"
+                "variant_image_url": "productos/gorros de satin_negro.webp"
       }
         ]
     },
@@ -853,7 +853,7 @@ export const productos =[
                 "name": "Pata de gato",
                 "stock": 1,
                 "variant_price_adjust": 0.00,
-                "variant_image_url": "productos/cartuchera_pataGato_1.png"
+                "variant_image_url": "productos/cartuchera_pataGato_1.webp"
       },
          {
                 "variant_id": "CE2",
@@ -862,7 +862,7 @@ export const productos =[
                 "name": "fresas",
                 "stock": 1,
                 "variant_price_adjust": 0.00,
-                "variant_image_url": "productos/cartuchera_fresas_2.png"
+                "variant_image_url": "productos/cartuchera_fresas_2.webp"
       },
          {
                 "variant_id": "CE3",
@@ -871,7 +871,7 @@ export const productos =[
                 "name": "Gatos",
                 "stock": 1,
                 "variant_price_adjust": 0.00,
-                "variant_image_url": "productos/cartuchera_gatos1_2.png"
+                "variant_image_url": "productos/cartuchera_gatos1_2.webp"
       }
         ]
     },
@@ -901,7 +901,7 @@ export const productos =[
         "price": 6.0,
         "category": "papeleria",
         "delete": 0,
-        "image_url":"productos/sobres_para_agenda_financiera.jpg"
+        "image_url":"productos/sobres_para_agenda_financiera.webp"
     },
     {
         "id": 90,

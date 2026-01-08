@@ -4,6 +4,11 @@
 @theme {
   --color-beige: #FAF3E8;
 }
+@media (prefers-color-scheme: dark) {
+  .element {
+    color-scheme: dark;
+  }
+}
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
