@@ -91,7 +91,7 @@ export const productos =[
         "name": "Rojo",
         "stock": 6,
         "variant_price_adjust": 0.00,
-        "variant_image_url": "productos/monedero_corazon_rojo.jpg"
+        "variant_image_url": "productos/monedero_corazon_rojo.webp"
       },
        {
         "variant_id": "MDCN",
@@ -100,7 +100,7 @@ export const productos =[
         "name": "Negro",
         "stock": 6,
         "variant_price_adjust": 0.00,
-        "variant_image_url": "productos/monedero_corazon_negro.jpg"
+        "variant_image_url": "productos/monedero_corazon_negro.webp"
       }
 
         ]
@@ -113,7 +113,7 @@ export const productos =[
         "price": 12.0,
         "category": "monederos",
         "delete": 0,
-        "image_url":"productos/monedero_largo_negro.jpg"
+        "image_url":"productos/monedero_largo_negro.webp"
     },
     {
         "id": 18,
@@ -144,7 +144,7 @@ export const productos =[
         "price": 10.0,
         "category": "carteras y bolsos",
         "delete": 0,
-        "image_url":"productos/portacosmeticos_corazones.jpg"
+        "image_url":"productos/portacosmeticos_corazones.webp"
     },
   
    
@@ -166,7 +166,7 @@ export const productos =[
         "price": 17.0,
         "category": "carteras y bolsos",
         "delete": 0,
-        "image_url":"productos/cartera_de_ostra.jpg"
+        "image_url":"productos/cartera_de_ostra.webp"
     },
 
     {
@@ -177,7 +177,7 @@ export const productos =[
         "price": 17.0,
         "category": "carteras y bolsos",
         "delete": 0,
-        "image_url": "productos/cartera_marron_armada_small.jpg"
+        "image_url": "productos/cartera_marron_armada_small.webp"
     },
     {
         "id": 45,
@@ -203,11 +203,11 @@ export const productos =[
         "id": 48,
         "cod_product": "MLRA",
         "name": "Monedero Largo Rosa",
-        "units": 1,
+        "units": 0,
         "price": 12.0,
         "category": "monederos",
         "delete": 0,
-        "image_url":"productos/monedero_largorosa.jpg"
+        "image_url":"productos/monedero_largorosa.webp"
     },
     {
         "id": 51,
@@ -225,7 +225,7 @@ export const productos =[
         "name": "Negro",
         "stock": 6,
         "variant_price_adjust": 0.00,
-        "variant_image_url": "productos/monedero_danna_negro.jpg"
+        "variant_image_url": "productos/monedero_danna_negro.webp"
       },
           {
         "variant_id": "MDRP",
@@ -234,7 +234,7 @@ export const productos =[
         "name": "Rosa Palo",
         "stock": 3,
         "variant_price_adjust": 0.00,
-        "variant_image_url": "productos/monedero_danna_rosa_palo.jpg"
+        "variant_image_url": "productos/monedero_danna_rosa_palo.webp"
       },
           {
         "variant_id": "MDRO",
@@ -243,7 +243,7 @@ export const productos =[
         "name": "Rojo ",
         "stock": 2,
         "variant_price_adjust": 0.00,
-        "variant_image_url": " productos/monedero_danna_rojo.jpg",
+        "variant_image_url": " productos/monedero_danna_rojo.webp",
       }
       
         ]
@@ -266,7 +266,7 @@ export const productos =[
         "price": 18.0,
         "category": "carteras y bolsos",
         "delete": 0,
-        "image_url":"productos/cartera_bandolera_marron.jpg"
+        "image_url":"productos/cartera_bandolera_marron.webp"
     },
     {
         "id": 64,
@@ -276,7 +276,7 @@ export const productos =[
         "price": 30.0,
         "category": "carteras y bolsos",
         "delete": 0,
-        "image_url":"productos/cartera_maxi.jpg"
+        "image_url":"productos/cartera_maxi.webp"
     },
     {
         "id": 67,
@@ -305,7 +305,7 @@ export const productos =[
         "name": "Crema",
         "stock": 6,
         "variant_price_adjust": 0.00,
-        "variant_image_url": "productos/cartera_ovym_beige.jpg"
+        "variant_image_url": "productos/cartera_ovym_beige.webp"
       },
         {
         "variant_id": "CMMN",
@@ -314,7 +314,7 @@ export const productos =[
         "name": "Negro",
         "stock": 6,
         "variant_price_adjust": 0.00,
-        "variant_image_url": "productos/cartera_ovym_negro.jpg"
+        "variant_image_url": "productos/cartera_ovym_negro.webp"
       }
         ]
     },
@@ -327,7 +327,7 @@ export const productos =[
         "price": 28.0,
         "category": "carteras y bolsos",
         "delete": 0,
-        "image_url":"productos/cartera_marron_terracota_mediana.jpg"
+        "image_url":"productos/cartera_marron_terracota_mediana.webp"
     },
     {
         "id": 38,
@@ -337,7 +337,7 @@ export const productos =[
         "price": 16.0,
         "category": "carteras y bolsos",
         "delete": 0,
-        "image_url":"productos/cartera_bandolera_azul_zigzag.jpg"
+        "image_url":"productos/cartera_bandolera_azul_zigzag.webp"
     },
    
     {
@@ -356,7 +356,7 @@ export const productos =[
         "name": "Blanco",
         "stock": 6,
         "variant_price_adjust": 0.00,
-        "variant_image_url": "productos/correas_blancas.jpg"
+        "variant_image_url": "productos/correas_blancas.webp"
       },
        {
         "variant_id": "CDN",
@@ -365,7 +365,7 @@ export const productos =[
         "name": "Negro",
         "stock": 6,
         "variant_price_adjust": 0.00,
-        "variant_image_url": "productos/correa_dama_negra.jpg"
+        "variant_image_url": "productos/correa_dama_negra.webp"
       },
         
                {
@@ -375,7 +375,7 @@ export const productos =[
         "name": "Marron/Camel",
         "stock": 6,
         "variant_price_adjust": 0.00,
-        "variant_image_url": "productos/correas_marrones.jpg"
+        "variant_image_url": "productos/correas_marrones.webp"
       }
       
         ]
@@ -397,7 +397,7 @@ export const productos =[
         "name": "Rojo",
         "stock": 6,
         "variant_price_adjust": 0.00,
-        "variant_image_url": "productos/monedero_largo_hojas_rojo.jpg"
+        "variant_image_url": "productos/monedero_largo_hojas_rojo.webp"
       },
                     {
                     "variant_id": "MHDN",
@@ -422,7 +422,7 @@ export const productos =[
         "price": 35.0,
         "category": "carteras y bolsos",
         "delete": 0,
-        "image_url":"productos/cartera_kvy.jpg"
+        "image_url":"productos/cartera_kvy.webp"
         
     },
     {
@@ -441,7 +441,7 @@ export const productos =[
         "name": "Negro",
         "stock": 6,
         "variant_price_adjust": 0.00,
-        "variant_image_url": "productos/cartera_nuditos_negra.jpg"
+        "variant_image_url": "productos/cartera_nuditos_negra.webp"
       },
                         {
         "variant_id": "CNM",
@@ -450,7 +450,7 @@ export const productos =[
         "name": "Marron Chocolate",
         "stock": 6,
         "variant_price_adjust": 0.00,
-        "variant_image_url": "productos/cartera_nuditos_marron.jpg"
+        "variant_image_url": "productos/cartera_nuditos_marron.webp"
       }
       
         ]
@@ -463,7 +463,7 @@ export const productos =[
         "price": 8.0,
         "category": "lentes de sol",
         "delete": 0,
-        "image_url":"productos/lentes_aviador.jpg"
+        "image_url":"productos/lentes_aviador.webp"
     },
     {
         "id": 33,
@@ -494,7 +494,7 @@ export const productos =[
         "price": 4.0,
         "category": "accesorios para termos",
         "delete": 0,
-        "image_url":"productos/tapa_pitillos.jpg"
+        "image_url":"productos/tapa_pitillos.webp"
     },
     {
         "id": 24,
@@ -514,7 +514,7 @@ export const productos =[
         "price": 7.0,
         "category": "accesorios para caballeros",
         "delete": 0,
-        "image_url":"productos/anillos_de_caballero_piedra_redonda_1.jpg"
+        "image_url":"productos/anillos_de_caballero_piedra_redonda_1.webp"
     },
     {
         "id": 56,
@@ -524,7 +524,7 @@ export const productos =[
         "price": 12.0,
         "category": "carteras y bolsos",
         "delete": 0,
-        "image_url":"productos/portacosmeticos_malla.jpg"
+        "image_url":"productos/portacosmeticos_malla.webp"
     },
  
    
@@ -536,7 +536,7 @@ export const productos =[
         "price": 6.0,
         "category": "accesorios para caballeros",
         "delete": 0,
-        "image_url":"productos/anillos_de_caballero.jpg"
+        "image_url":"productos/anillos_de_caballero.webp"
     },
     {
         "id": 61,
@@ -546,7 +546,7 @@ export const productos =[
         "price": 10.0,
         "category": "monederos",
         "delete": 0,
-        "image_url": "productos/monedero_rosa_de_hoja.jpg",
+        "image_url": "productos/monedero_rosa_de_hoja.webp",
     },
   
     {
@@ -575,7 +575,7 @@ export const productos =[
         "name": "Rojo",
         "stock": 6,
         "variant_price_adjust": 0.00,
-        "variant_image_url": "productos/MLR.jpg"
+        "variant_image_url": "productos/MLR.webp"
       },
             {
         "variant_id": "MLN",
@@ -597,7 +597,7 @@ export const productos =[
         "price": 6.0,
         "category": "lentes de sol",
         "delete": 0,
-        "image_url":"productos/lentes_de_sol_de_pasta.jpg"
+        "image_url":"productos/lentes_de_sol_de_pasta.webp"
     },
    
     
@@ -609,7 +609,7 @@ export const productos =[
         "price": 13.0,
         "category": "billeteras",
         "delete": 0,
-        "image_url":"productos/billetera_caballero.jpg"
+        "image_url":"productos/billetera_caballero.webp"
         
     },
     {
@@ -620,7 +620,7 @@ export const productos =[
         "price": 29.0,
         "category": "accesorios para dama",
         "delete": 0,
-        "image_url":"productos/bandejas_de_accesorios_gris.jpg"
+        "image_url":"productos/bandejas_de_accesorios_gris.webp"
     },
   
    /* {
@@ -659,7 +659,7 @@ export const productos =[
         "price": 30.0,
         "category": "carteras y bolsos",
         "delete": 0,
-        "image_url":"productos/bolso_para_manicurista.jpg"
+        "image_url":"productos/bolso_para_manicurista.webp"
     },
     {
         "id": 55,
@@ -708,7 +708,7 @@ export const productos =[
         "price": 8.0,
         "category": "accesorios para caballeros",
         "delete": 0,
-        "image_url":"productos/cadena_de_Caballero.jpg"
+        "image_url":"productos/cadena_de_Caballero.webp"
     },
     {
         "id": 57,
@@ -726,7 +726,7 @@ export const productos =[
         "name": "bolsas grandes",
         "stock": 1,
         "variant_price_adjust": 0.00,
-        "variant_image_url": "productos/bolsas_holograficas.jpg"
+        "variant_image_url": "productos/bolsas_holograficas.webp"
       },
                {
         "variant_id": "BHM",
@@ -735,7 +735,7 @@ export const productos =[
         "name": "bolsas medianas",
         "stock": 1,
         "variant_price_adjust": 0.00,
-        "variant_image_url": "productos/bolsas_holograficas.jpg"
+        "variant_image_url": "productos/bolsas_holograficas.webp"
       },
                {
         "variant_id": "BHP",
@@ -744,7 +744,7 @@ export const productos =[
         "name": "bolsas pequeñas",
         "stock": 1,
         "variant_price_adjust": 0.00,
-        "variant_image_url": "productos/bolsas_holograficas.jpg"
+        "variant_image_url": "productos/bolsas_holograficas.webp"
       }
         ]
     },
@@ -786,7 +786,7 @@ export const productos =[
         "price": 35.0,
         "category": "haircare",
         "delete": 0,
-        "image_url":"productos/kit_para_rizos.jpg"
+        "image_url":"productos/kit_para_rizos.webp"
     },
 
    /* {
@@ -806,7 +806,7 @@ export const productos =[
         "price": 12.0,
         "category": "lentes de sol",
         "delete": 0,
-        "image_url":"productos/lentes_transformer.jpg"
+        "image_url":"productos/lentes_transformer.webp"
     },
     {
         "id": 84,
@@ -911,7 +911,7 @@ export const productos =[
         "price": 15.0,
         "category": "carteras y bolsos",
         "delete": 0,
-        "image_url":"productos/cartera_ima.jpg"
+        "image_url":"productos/cartera_ima.webp"
     },
     {
         "id": 52,
@@ -939,7 +939,7 @@ export const productos =[
         "name": "Negro",
         "stock": 6,
         "variant_price_adjust": 0.00,
-        "variant_image_url": "productos/lentes_de_sol_moda_negro.jpg"
+        "variant_image_url": "productos/lentes_de_sol_moda_negro.webp"
       },   {
         "variant_id": "LSDMM",
         "type": "color",
@@ -947,7 +947,7 @@ export const productos =[
         "name": "Marron",
         "stock": 6,
         "variant_price_adjust": 0.00,
-        "variant_image_url": "productos/lentes_de_sol_moda_marron.jpg"
+        "variant_image_url": "productos/lentes_de_sol_moda_marron.webp"
       }
         ]
         
@@ -960,7 +960,7 @@ export const productos =[
         "price": 12.0,
         "category": "monederos",
         "delete": 0,
-        "image_url": "productos/monedero_verde_sm.jpg",
+        "image_url": "productos/monedero_verde_sm.webp",
     },
     {
         "id": 92,
@@ -970,7 +970,7 @@ export const productos =[
         "price": 14.0,
         "category": "monederos",
         "delete": 0,
-        "image_url": "productos/monedero_rosa_palo_tachuelas.jpg",
+        "image_url": "productos/monedero_rosa_palo_tachuelas.webp",
     },
     {
         "id": 93,
@@ -980,7 +980,7 @@ export const productos =[
         "price": 16.0,
         "category": "monederos",
         "delete": 0,
-        "image_url": "productos/monedero_morado_flowers.jpg",
+        "image_url": "productos/monedero_morado_flowers.webp",
     },
     {
         "id": 94,
@@ -990,7 +990,7 @@ export const productos =[
         "price": 15.0,
         "category": "monederos",
         "delete": 0,
-        "image_url": "productos/monedero_largo_rojo_bourbon.jpg",
+        "image_url": "productos/monedero_largo_rojo_bourbon.webp",
       }
     ,
    /* {

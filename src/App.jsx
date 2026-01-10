@@ -75,11 +75,11 @@ useEffect(()=>{
   function filterProducts(filter){
     if(filter.toLowerCase()==='todo'){ 
     
-      setDisplayProducts(products)}
+      setDisplayProducts(products.sort((a,b) => b.units - a.units ))}
     else{
     const filteredProducts = products.filter(product=> product.category.toLowerCase() ===filter.toLowerCase())
   
-   setDisplayProducts(filteredProducts)
+   setDisplayProducts(filteredProducts.sort((a,b) => b.units - a.units ))
   }
   }
   filterProducts(selectedFilter)
@@ -105,8 +105,9 @@ useEffect(()=>{
         <main className="flex flex-col justify-center mx-16 ">
         {/* FILTROS PARA MOSTRAR PRODUCTOS POR CATEGORIAS */}
           <FilterCategories filter={selectedFilter} onSelectFilter={handleSelectFilter}/>
+          {/*Productos o CONTENIDO PRINCIPAL */}
           <div className=' flex justify-start gap-x-4 gap-y-6 max-w-7xl flex-wrap'>
-            {isLoading && <p>Cargando...</p>}
+          {isLoading && <span className="loading loading-spinner loading-xl text-pink-300"></span>}
             {!isLoading && !errMsg && displayProducts && displayProducts.map((product)=>{
               return(<ProductCard key={product.id} product={product} rate={eurorate&&1}/>)
             })}

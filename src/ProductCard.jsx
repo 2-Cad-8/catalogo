@@ -113,9 +113,16 @@ export const ProductCard = ({ product, rate }) => {
            </button>*/}
           {/* <button
             className='btn btn-md font-semibold rounded-full transition duration-300 border-slate-700 border-2  text-slate-700'>*/}
-          <a className='btn btn-md w-full text-lg font-semibold rounded-full transition duration-300 border-slate-700 border-2  text-slate-700' href={`https://api.whatsapp.com/send/?phone=%2B584140739409&text=${handleBuyOnWhatsApp(product.name)}`}>
-            Comprar
+          {  product.units != 0 ? 
+          <a className='btn btn-md 
+          w-full text-lg font-semibold
+           rounded-full transition duration-300 border-slate-700 border-2 
+            text-slate-700 '  href={`https://api.whatsapp.com/send/?phone=%2B584140739409&text=${handleBuyOnWhatsApp(product.name)}`}>
+          Comprar
           </a>
+            :
+            <h6 className='font-semibold text-xl text-red-400'> No disponible por Ahora</h6>
+          }
           {
             /*
             </button>
