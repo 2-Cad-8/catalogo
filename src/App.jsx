@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import  { useState, useEffect } from 'react';
 import { FilterCategories } from './FilterCategories';
 import { ProductCard } from './ProductCard';
+import MobileFilter from './MobileFilter';
 function App() {
   const [products, setProducts]=useState(productos)
   const [selectedFilter,setSelectedFilter] = useState('todo')
@@ -75,11 +76,11 @@ useEffect(()=>{
   function filterProducts(filter){
     if(filter.toLowerCase()==='todo'){ 
     
-      setDisplayProducts(products.sort((a,b) => b.units - a.units ))}
+      setDisplayProducts(products)}
     else{
     const filteredProducts = products.filter(product=> product.category.toLowerCase() ===filter.toLowerCase())
   
-   setDisplayProducts(filteredProducts.sort((a,b) => b.units - a.units ))
+   setDisplayProducts(filteredProducts)
   }
   }
   filterProducts(selectedFilter)
@@ -101,10 +102,14 @@ useEffect(()=>{
         
       </div>
       </nav>
-      <div>
-        <main className="flex flex-col justify-center mx-16 ">
+      <div className='dark:bg-white'>
+        <main className="flex flex-col justify-center mx-16  ">
         {/* FILTROS PARA MOSTRAR PRODUCTOS POR CATEGORIAS */}
-          <FilterCategories filter={selectedFilter} onSelectFilter={handleSelectFilter}/>
+        <div className='xl:flex xl:justify-start xl:me-12'>
+
+        <MobileFilter filter={selectedFilter} onSelectFilter={handleSelectFilter}/>
+        </div>
+        {/*  <FilterCategories filter={selectedFilter} onSelectFilter={handleSelectFilter}/>*/}
           {/*Productos o CONTENIDO PRINCIPAL */}
           <div className=' flex justify-start gap-x-4 gap-y-6 max-w-7xl flex-wrap'>
           {isLoading && <span className="loading loading-spinner loading-xl text-pink-300"></span>}

@@ -19,7 +19,7 @@ export function FilterCategories({filter,onSelectFilter}) {
 const BtnFilter = ({name,onSelect,filter})=>{
   return(
     <button value={name}
-      className= {`btn border-2 rounded-full border-slate-700 font-regular text-sm ${filter.toLowerCase() === name.toLowerCase() ? 'text-white bg-slate-700':'text-slate-700'}`}
+      className= {`dark:bg-white btn border-2 rounded-full border-slate-700 font-regular text-sm ${filter.toLowerCase() === name.toLowerCase() ? 'text-white bg-slate-700':'text-slate-700'}`}
       onClick={(e)=>onSelect(e.target.value)}>{name}</button>
   )
 }

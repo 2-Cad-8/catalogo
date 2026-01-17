@@ -105,7 +105,7 @@ export const productos =[
 
         ]
     },
-    {
+    /*{
         "id": 17,
         "cod_product": "MLAN",
         "name": "Monedero Largo Negro",
@@ -114,7 +114,7 @@ export const productos =[
         "category": "monederos",
         "delete": 0,
         "image_url":"productos/monedero_largo_negro.webp"
-    },
+    },*/
     {
         "id": 18,
         "cod_product": "SCS",
@@ -199,7 +199,7 @@ export const productos =[
         "delete": 0,
         "image_url":"productos/bota_tapa_pitillo.webp"
     },
-    {
+  /*  {
         "id": 48,
         "cod_product": "MLRA",
         "name": "Monedero Largo Rosa",
@@ -208,7 +208,7 @@ export const productos =[
         "category": "monederos",
         "delete": 0,
         "image_url":"productos/monedero_largorosa.webp"
-    },
+    },*/
     {
         "id": 51,
         "cod_product": "MD",
@@ -704,7 +704,7 @@ export const productos =[
         "id": 54,
         "cod_product": "CDC",
         "name": "Cadenas de Caballero",
-        "units": 3,
+        "units": 0,
         "price": 8.0,
         "category": "accesorios para caballeros",
         "delete": 0,
