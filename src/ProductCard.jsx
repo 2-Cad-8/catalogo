@@ -38,7 +38,7 @@ export const ProductCard = ({ product, rate }) => {
         <span className="text-xs font-semibold text-gray-500 mb-1">
           Color: {selectedVariant.name}
         </span>
-        <div className="flex space-x-2">
+        <div className="flex flex-wrap space-y-2 xl:flex-nowrap  space-x-2">
           {product.variants.map((variant) => (
             <button
               key={variant.variant_id} // Usamos variant_id del JSON
@@ -65,15 +65,16 @@ export const ProductCard = ({ product, rate }) => {
   };
 
   return (
-    <div className="card w-70 bg-white shadow-xl hover:shadow-2xl transition duration-300 border border-gray-100 h-xs flex flex-col">
+    <div className="card w-35 xl:w-70 bg-white shadow-xl hover:shadow-2xl transition duration-300 border border-gray-100 h-xs flex flex-col">
 
       {/* Imagen del Producto */}
-      <figure className="relative h-60 overflow-hidden">
+      <figure className="relative h-40 xl:h-60 overflow-hidden">
         {/* Si hay variante seleccionada con imagen, úsala. Si no, usa la imagen base. */}
         <img
           src={(selectedVariant && selectedVariant.variant_image_url) || product.image_url}
           alt={product.name + " - " + (selectedVariant?.name || "Base")}
           className="w-full h-full object-cover transition duration-300 hover:scale-[1.03]"
+          loading='lazy'
           onError={(e) => { e.target.onerror = null; e.target.src = "https://placehold.co/400x300/374151/ffffff?text=Image+Missing"; }} />
         {product.units === 0 && (
                 <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
@@ -88,9 +89,9 @@ export const ProductCard = ({ product, rate }) => {
         {/* Nombre y Precio */}
         <div className='flex justify-between gap-x-4'>
 
-          {/*<p className="text-3xl font-bold text-slate-700 mb-2">{(product.price * rate).toFixed(2)}bs</p>*/}
+          <p className="text-xl xl:text-3xl font-bold text-slate-700 mb-2">${product.price}</p>
         </div>
-        <h2 className="card-title text-gray-800 text-xl mb-1">{product.name}</h2>
+        <h2 className="card-title text-gray-800 text-md xl:text-xl mb-1">{product.name}</h2>
         {/* Descripción */}
 
 
@@ -113,16 +114,14 @@ export const ProductCard = ({ product, rate }) => {
            </button>*/}
           {/* <button
             className='btn btn-md font-semibold rounded-full transition duration-300 border-slate-700 border-2  text-slate-700'>*/}
-          {  product.units != 0 ? 
+         
           <a className='btn btn-md 
           w-full text-lg font-semibold
            rounded-full transition duration-300 border-slate-700 border-2 
             text-slate-700 dark:bg-white'  href={`https://api.whatsapp.com/send/?phone=%2B584140739409&text=${handleBuyOnWhatsApp(product.name)}`}>
           Comprar
           </a>
-            :
-            <h6 className='font-semibold text-xl text-red-400'> No disponible por Ahora</h6>
-          }
+            
           {
             /*
             </button>

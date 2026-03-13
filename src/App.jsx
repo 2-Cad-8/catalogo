@@ -90,20 +90,20 @@ useEffect(()=>{
   return (
     <>
       <div>
-      <nav className='flex justify-between px-18 my-4 bg-beige h-18 mt-0 items-center'>
-      <h1 className='font-semibold text-xl color-slate-700'>Dalaz Shop</h1>
+      <nav className='flex justify-between px-12 xl:px-18 my-4 bg-beige h-18 mt-0 items-center'>
+      <h1 className='font-semibold text-xl text-slate-700  dark:text-slate-700'>Dalaz Shop</h1>
       <div className='flex gap-x-2 items-center pe-12'>
-      <a href='https://www.instagram.com/dalazshopve?igsh=dHFwaXprc3Z1OWNu' className='btn btn-circle border-none bg-beige hover:bg-slate-700 hover:text-white'>
+      <a href='https://www.instagram.com/dalazshopve?igsh=dHFwaXprc3Z1OWNu' className='btn btn-circle border-none dark:text-slate-700 bg-beige hover:bg-slate-700 hover:text-white'>
         <span><FontAwesomeIcon icon={faInstagram} size='lg'/></span>
       </a>
-      <a href='https://www.tiktok.com/@dalazshopve?_r=1&_t=ZM-92goKgChWQN' className='btn btn-circle bg-beige border-none hover:bg-slate-700 hover:text-white'>
+      <a href='https://www.tiktok.com/@dalazshopve?_r=1&_t=ZM-92goKgChWQN' className='btn btn-circle dark:text-slate-700 bg-beige border-none hover:bg-slate-700 hover:text-white'>
         <span><FontAwesomeIcon icon={faTiktok} size='lg'/></span>
       </a>
         
       </div>
       </nav>
       <div className='dark:bg-white'>
-        <main className="flex flex-col justify-center mx-16  ">
+        <main className="flex flex-col justify-center mx-8 xl:mx-16  ">
         {/* FILTROS PARA MOSTRAR PRODUCTOS POR CATEGORIAS */}
         <div className='xl:flex xl:justify-start xl:me-12'>
 
@@ -111,7 +111,7 @@ useEffect(()=>{
         </div>
         {/*  <FilterCategories filter={selectedFilter} onSelectFilter={handleSelectFilter}/>*/}
           {/*Productos o CONTENIDO PRINCIPAL */}
-          <div className=' flex justify-start gap-x-4 gap-y-6 max-w-7xl flex-wrap'>
+          <div className=' flex justify-center xl:justify-start gap-x-2 gap-y-6 max-w-7xl flex-wrap'>
           {isLoading && <span className="loading loading-spinner loading-xl text-pink-300"></span>}
             {!isLoading && !errMsg && displayProducts && displayProducts.map((product)=>{
               return(<ProductCard key={product.id} product={product} rate={eurorate&&1}/>)

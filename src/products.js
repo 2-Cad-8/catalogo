@@ -16,7 +16,7 @@ export const productos =[
         "name": "Azul cielo",
         "stock": 6,
         "variant_price_adjust": 0.00,
-        "variant_image_url": "productos/tarjetero_azul.jpg"
+        "variant_image_url": "productos/tarjeteros_all.jpg"
       },
       {
         "variant_id": "TN",
@@ -25,7 +25,7 @@ export const productos =[
         "name": "Negro",
         "stock": 6,
         "variant_price_adjust": 0.00,
-        "variant_image_url": "productos/tarjetero_negro.jpg"
+        "variant_image_url": "productos/tarjeteros_all.jpg"
       },
         {
         "variant_id": "TVC",
@@ -34,16 +34,16 @@ export const productos =[
         "name": "Verde Lima",
         "stock": 6,
         "variant_price_adjust": 0.00,
-        "variant_image_url": "public/productos/tarjetero_verde_lima.jpg"
+        "variant_image_url": "productos/tarjeteros_all.jpg"
       },
         {
         "variant_id": "TVO",
         "type": "color",
         "value": "#0b290f",
         "name": "Verde Navidad",
-        "stock": 6,
+        "stock": 0,
         "variant_price_adjust": 0.00,
-        "variant_image_url": "productos/tarjetero_verde_navidad.jpg"
+        "variant_image_url": "productos/tarjeteros_all.jpg"
       },
        {
         "variant_id": "TB",
@@ -52,16 +52,16 @@ export const productos =[
         "name": "Beige",
         "stock": 6,
         "variant_price_adjust": 0.00,
-        "variant_image_url": "productos/tarjetero_beige.jpg"
+        "variant_image_url": "productos/tarjeteros_all.jpg"
       },
        {
         "variant_id": "TRA",
         "type": "color",
         "value": "#facde0",
         "name": "Rosa",
-        "stock": 6,
+        "stock": 0,
         "variant_price_adjust": 0.00,
-        "variant_image_url": "productos/tarjetero_rosa.jpg"
+        "variant_image_url": "productos/tarjeteros_all.jpg"
       },
        {
         "variant_id": "TRO",
@@ -70,7 +70,7 @@ export const productos =[
         "name": "Rojo",
         "stock": 6,
         "variant_price_adjust": 0.00,
-        "variant_image_url": "productos/tarjetero_rojo.jpg"
+        "variant_image_url": "productos/tarjeteros_all.jpg"
       }
     ],
     },
@@ -89,7 +89,7 @@ export const productos =[
         "type": "color",
         "value": "#db1e1eff",
         "name": "Rojo",
-        "stock": 6,
+        "stock": 0,
         "variant_price_adjust": 0.00,
         "variant_image_url": "productos/monedero_corazon_rojo.webp"
       },
@@ -98,7 +98,7 @@ export const productos =[
         "type": "color",
         "value": "#000000",
         "name": "Negro",
-        "stock": 6,
+        "stock": 3,
         "variant_price_adjust": 0.00,
         "variant_image_url": "productos/monedero_corazon_negro.webp"
       }
@@ -213,7 +213,7 @@ export const productos =[
         "id": 51,
         "cod_product": "MD",
         "name": "Monedero Danna ",
-        "units": 3,
+        "units": 4,
         "price": 10.0,
         "category": "monederos",
         "delete": 0,
@@ -223,7 +223,7 @@ export const productos =[
         "type": "color",
         "value": "#000000",
         "name": "Negro",
-        "stock": 6,
+        "stock": 2,
         "variant_price_adjust": 0.00,
         "variant_image_url": "productos/monedero_danna_negro.webp"
       },
@@ -232,7 +232,7 @@ export const productos =[
         "type": "color",
         "value": "#881b45ff",
         "name": "Rosa Palo",
-        "stock": 3,
+        "stock": 2,
         "variant_price_adjust": 0.00,
         "variant_image_url": "productos/monedero_danna_rosa_palo.webp"
       },
@@ -241,7 +241,7 @@ export const productos =[
         "type": "color",
         "value": "#971414ff",
         "name": "Rojo ",
-        "stock": 2,
+        "stock": 0,
         "variant_price_adjust": 0.00,
         "variant_image_url": " productos/monedero_danna_rojo.webp",
       }
@@ -385,7 +385,7 @@ export const productos =[
         "id": 58,
         "cod_product": "MHDN",
         "name": "Monedero de Hojas Doradas ",
-        "units": 1,
+        "units": 0,
         "price": 14.0,
         "category": "monederos",
         "delete": 0,
@@ -395,7 +395,7 @@ export const productos =[
         "type": "color",
         "value": "#c91919ff",
         "name": "Rojo",
-        "stock": 6,
+        "stock": 0,
         "variant_price_adjust": 0.00,
         "variant_image_url": "productos/monedero_largo_hojas_rojo.webp"
       },
@@ -404,7 +404,7 @@ export const productos =[
                     "type": "color",
                     "value": "#000000",
                     "name": "Negro",
-                    "stock": 6,
+                    "stock": 0,
                     "variant_price_adjust": 0.00,
                     "variant_image_url": "https://placehold.co/400x300/6B7280/ffffff?text=Gris+Grafito"
                 },
@@ -562,8 +562,8 @@ export const productos =[
     {
         "id": 1,
         "cod_product": "MLR",
-        "name": "Monedero Lux Rojo",
-        "units": 5,
+        "name": "Monedero Lux ",
+        "units": 8,
         "price": 17.0,
         "category": "monederos",
         "delete": 0,
@@ -573,7 +573,7 @@ export const productos =[
         "type": "color",
         "value": "#b60b0bff",
         "name": "Rojo",
-        "stock": 6,
+        "stock": 0,
         "variant_price_adjust": 0.00,
         "variant_image_url": "productos/MLR.webp"
       },
@@ -670,6 +670,16 @@ export const productos =[
         "category": "accesorios para caballeros",
         "delete": 0,
         "image_url":"productos/pulsera_de_caballero_inmantada_duo.webp"
+    },
+      {
+        "id": 55,
+        "cod_product": "CBG",
+        "name": "Cartera Baguette Gamuzada",
+        "units": 1,
+        "price": 25.0,
+        "category": "carteras y bolsos",
+        "delete": 0,
+        "image_url":"productos/cartera_baguette_gamuzada.jpg"
     },
     {
         "id": 5,
@@ -782,7 +792,7 @@ export const productos =[
         "id": 7,
         "cod_product": "KPR",
         "name": "Kit para Rizos",
-        "units": 2,
+        "units": 1,
         "price": 35.0,
         "category": "haircare",
         "delete": 0,
@@ -896,9 +906,9 @@ export const productos =[
     {
         "id": 89,
         "cod_product": "SPAF",
-        "name": "Sobres para Agenda Financiera(pack de 6)",
+        "name": "Sobres para dinero",
         "units": 3,
-        "price": 6.0,
+        "price": 5.0,
         "category": "papeleria",
         "delete": 0,
         "image_url":"productos/sobres_para_agenda_financiera.webp"
@@ -976,7 +986,7 @@ export const productos =[
         "id": 93,
         "cod_product": "MFM",
         "name": "Monedero Flowers Morado",
-        "units": 1,
+        "units": 0,
         "price": 16.0,
         "category": "monederos",
         "delete": 0,
@@ -985,8 +995,8 @@ export const productos =[
     {
         "id": 94,
         "cod_product": "MRL",
-        "name": "Monedero Red Largo",
-        "units": 1,
+        "name": "Monedero Lane",
+        "units": 0,
         "price": 15.0,
         "category": "monederos",
         "delete": 0,

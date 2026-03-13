@@ -2,7 +2,7 @@ export default function MobileFilter({filter,onSelectFilter}){
     return(
         <div className="p-4  max-w-sm">
 
-        <select className="select  rounded-xl" defaultValue={filter} onChange={(e)=> onSelectFilter(e.target.value)}>
+        <select className="select  rounded-xl dark:bg-white" defaultValue={filter} onChange={(e)=> onSelectFilter(e.target.value)}>
             <option 
             value="Todo" 
             
