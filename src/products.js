@@ -5,7 +5,7 @@ export const productos =[
         "cod_product": "TA",
         "name": "Tarjeteros",
         "units": 4,
-        "price": 7.0,
+        "price": 12.0,
         "category": "monederos",
         "delete": 0,
         "variants": [
@@ -41,7 +41,7 @@ export const productos =[
         "type": "color",
         "value": "#0b290f",
         "name": "Verde Navidad",
-        "stock": 0,
+        "stock": 2,
         "variant_price_adjust": 0.00,
         "variant_image_url": "productos/tarjeteros_all.jpg"
       },
@@ -59,7 +59,7 @@ export const productos =[
         "type": "color",
         "value": "#facde0",
         "name": "Rosa",
-        "stock": 0,
+        "stock": 6,
         "variant_price_adjust": 0.00,
         "variant_image_url": "productos/tarjeteros_all.jpg"
       },
@@ -80,7 +80,7 @@ export const productos =[
         "cod_product": "MDCR",
         "name": "Monedero de Corazón",
         "units": 3,
-        "price": 8.0,
+        "price": 12.0,
         "category": "monederos",
         "delete": 0,
         "variants":[
@@ -105,6 +105,122 @@ export const productos =[
 
         ]
     },
+    {
+        "id": 69,
+        "cod_product": "LLDP",
+        "name": "Llaveros de Pareja",
+        "units": 2,
+        "price": 12.0,
+        "category": "accesorios de pareja",
+        "delete": 0,
+        "variants": [
+      {
+        "variant_id": "LLG",
+        "type": "color",
+        "value": "#000000",
+        "name": "Llavero de gatos",
+        "stock": 6,
+        "variant_price_adjust": 0.00,
+        "variant_image_url": "productos/llavero_parejas_gatos.webp"
+      },
+      {
+        "variant_id": "LLR",
+        "type": "color",
+        "value": "#000000",
+        "name": "Llaveros de rompecabezas",
+        "stock": 6,
+        "variant_price_adjust": 0.00,
+        "variant_image_url": "productos/llaveros_pareja_puzzle.webp"
+      }]
+    },
+     {
+        "id": 70,
+        "cod_product": "PDP",
+        "name": "Pulseras de Pareja",
+        "units": 0,
+        "price": 12.0,
+        "category": "accesorios de pareja",
+        "delete": 0,
+        "image_url":"productos/pulseras de pareja dalaz shop.webp"
+    },
+      {
+        "id": 79,
+        "cod_product": "CDP",
+        "name": "Collares de Pareja",
+        "units": 1,
+        "price": 12.0,
+        "category": "accesorios de pareja",
+        "delete": 0,
+         "variants": [
+      {
+        "variant_id": "CI",
+        "type": "color",
+        "value": "#000000",
+        "name": "Corazon Inmantado",
+        "stock": 6,
+        "variant_price_adjust": 14.00,
+        "variant_image_url": "productos/corazon_inmantado.webp"
+      },
+      {
+        "variant_id": "CR",
+        "type": "color",
+        "value": "#000000",
+        "name": "Collar de rompecabezas",
+        "stock": 0,
+        "variant_price_adjust": 0.00,
+        "variant_image_url": "productos/collar_pareja_puzzle.webp"
+      },
+      {
+        "variant_id": "CCME",
+        "type": "color",
+        "value": "#000000",
+        "name": "Collar Manos Entrelazadas",
+        "stock": 6,
+        "variant_price_adjust": 0.00,
+        "variant_image_url": "productos/collar_manos_entrelazadas.webp"
+      }
+  ]
+    },
+     {
+        "id": 77,
+        "cod_product": "MC",
+        "name": "Monedero Cat",
+        "units": 1,
+        "price": 16.0,
+        "category": "monederos",
+        "delete": 0,
+        "image_url":"productos/monedero_Cat.webp"
+    },
+     {
+        "id": 73,
+        "cod_product": "ADP",
+        "name": "Anillos de Pareja",
+        "units": 2,
+        "price": 8.0,
+        "category": "accesorios de pareja",
+        "delete": 0,
+        "variants": [
+                  {
+                    "variant_id": "AP",
+                    "type": "color",
+                    "value": "#000000",
+                    "name": "Anillos Principito",
+                    "stock": 6,
+                    "variant_price_adjust": 14.00,
+                    "variant_image_url": "productos/anillos_principito.webp"
+                  },
+                  {
+                    "variant_id": "ASL",
+                    "type": "color",
+               
+                    "value": "#000000",
+                    "name": "Anillos Sol y Luna",
+                    "stock": 6,
+                    "variant_price_adjust": 0.00,
+                    "variant_image_url": "productos/anillos_de_pareja.jpg"
+                  }
+  ]
+    },
     /*{
         "id": 17,
         "cod_product": "MLAN",
@@ -120,7 +236,7 @@ export const productos =[
         "cod_product": "SCS",
         "name": "Skincare Set",
         "units": 1,
-        "price": 12.0,
+        "price": 14.0,
         "category": "skincare",
         "delete": 0,
         "image_url":"productos/set_de_skincare.webp"
@@ -153,7 +269,7 @@ export const productos =[
         "cod_product": "COBL",
         "name": "Cartera Oval Blanca",
         "units": 1,
-        "price": 17.0,
+        "price": 20.0,
         "category": "carteras y bolsos",
         "delete": 0,
         "image_url":"productos/cartera_oval_blanca.webp"
@@ -163,7 +279,7 @@ export const productos =[
         "cod_product": "CDO",
         "name": "Cartera De Ostra",
         "units": 0,
-        "price": 17.0,
+        "price": 20.0,
         "category": "carteras y bolsos",
         "delete": 0,
         "image_url":"productos/cartera_de_ostra.webp"
@@ -174,7 +290,7 @@ export const productos =[
         "cod_product": "CMPA",
         "name": "Cartera Marron Pequeña Armada",
         "units": 1,
-        "price": 17.0,
+        "price": 20.0,
         "category": "carteras y bolsos",
         "delete": 0,
         "image_url": "productos/cartera_marron_armada_small.webp"
@@ -182,9 +298,9 @@ export const productos =[
     {
         "id": 45,
         "cod_product": "SPT",
-        "name": "Strap Para Telefono",
+        "name": "Strap Para Teléfono",
         "units": 2,
-        "price": 7.0,
+        "price": 5.0,
         "category": "tecnología",
         "delete": 0,
         "image_url":"productos/strap_tlf.webp"
@@ -214,7 +330,7 @@ export const productos =[
         "cod_product": "MD",
         "name": "Monedero Danna ",
         "units": 4,
-        "price": 10.0,
+        "price": 14.0,
         "category": "monederos",
         "delete": 0,
         "variants":[
@@ -263,7 +379,7 @@ export const productos =[
         "cod_product": "CMPB",
         "name": "Cartera Marron Pequeña",
         "units": 1,
-        "price": 18.0,
+        "price": 20.0,
         "category": "carteras y bolsos",
         "delete": 0,
         "image_url":"productos/cartera_bandolera_marron.webp"
@@ -334,7 +450,7 @@ export const productos =[
         "cod_product": "CRZA",
         "name": "Cartera Rectangular ZigZag Azul",
         "units": 1,
-        "price": 16.0,
+        "price": 18.0,
         "category": "carteras y bolsos",
         "delete": 0,
         "image_url":"productos/cartera_bandolera_azul_zigzag.webp"
@@ -344,7 +460,7 @@ export const productos =[
         "id": 76,
         "cod_product": "CDN",
         "name": "Correas de dama ",
-        "units": 2,
+        "units": 4,
         "price": 10.0,
         "category": "accesorios para dama",
         "delete": 0,
@@ -363,7 +479,7 @@ export const productos =[
         "type": "color",
         "value": "#000000",
         "name": "Negro",
-        "stock": 6,
+        "stock": 0,
         "variant_price_adjust": 0.00,
         "variant_image_url": "productos/correa_dama_negra.webp"
       },
@@ -460,7 +576,7 @@ export const productos =[
         "cod_product": "LSDA",
         "name": "Lentes de Sol Tipo Aviador",
         "units": 23,
-        "price": 8.0,
+        "price": 12.0,
         "category": "lentes de sol",
         "delete": 0,
         "image_url":"productos/lentes_aviador.webp"
@@ -470,7 +586,7 @@ export const productos =[
         "cod_product": "AFP",
         "name": "Agenda Financiera ",
         "units": 4,
-        "price": 20.0,
+        "price": 26.0,
         "category": "papeleria",
         "delete": 0,
         "image_url": "productos/agendas_financieras.jpg",
@@ -500,7 +616,7 @@ export const productos =[
         "id": 24,
         "cod_product": "TBBB",
         "name": "Tote Bag Beige con Bolsito",
-        "units": 1,
+        "units": 0,
         "price": 27.0,
         "category": "carteras y bolsos",
         "delete": 0,
@@ -511,7 +627,7 @@ export const productos =[
         "cod_product": "APR",
         "name": "Anillo Piedra Redonda",
         "units": 5,
-        "price": 7.0,
+        "price": 8.0,
         "category": "accesorios para caballeros",
         "delete": 0,
         "image_url":"productos/anillos_de_caballero_piedra_redonda_1.webp"
@@ -521,7 +637,7 @@ export const productos =[
         "cod_product": "PNDM",
         "name": "Portacosméticos negro de Malla",
         "units": 4,
-        "price": 12.0,
+        "price": 15.0,
         "category": "carteras y bolsos",
         "delete": 0,
         "image_url":"productos/portacosmeticos_malla.webp"
@@ -533,7 +649,7 @@ export const productos =[
         "cod_product": "ANPC",
         "name": "Anillos Negros Para Caballero",
         "units": 4,
-        "price": 6.0,
+        "price": 7.0,
         "category": "accesorios para caballeros",
         "delete": 0,
         "image_url":"productos/anillos_de_caballero.webp"
@@ -543,7 +659,7 @@ export const productos =[
         "cod_product": "MPHR",
         "name": "Monedero Pequeño Hoja Rosa",
         "units": 2,
-        "price": 10.0,
+        "price": 11.0,
         "category": "monederos",
         "delete": 0,
         "image_url": "productos/monedero_rosa_de_hoja.webp",
@@ -564,7 +680,7 @@ export const productos =[
         "cod_product": "MLR",
         "name": "Monedero Lux ",
         "units": 8,
-        "price": 17.0,
+        "price": 20.0,
         "category": "monederos",
         "delete": 0,
         "variants":[
@@ -573,7 +689,7 @@ export const productos =[
         "type": "color",
         "value": "#b60b0bff",
         "name": "Rojo",
-        "stock": 0,
+        "stock": 8,
         "variant_price_adjust": 0.00,
         "variant_image_url": "productos/MLR.webp"
       },
@@ -594,7 +710,7 @@ export const productos =[
         "cod_product": "LSDP",
         "name": "Lentes de Sol de Pasta",
         "units": 7,
-        "price": 6.0,
+        "price": 8.0,
         "category": "lentes de sol",
         "delete": 0,
         "image_url":"productos/lentes_de_sol_de_pasta.webp"
@@ -606,7 +722,7 @@ export const productos =[
         "cod_product": "BDC",
         "name": "Billeteras de Caballero",
         "units": 3,
-        "price": 13.0,
+        "price": 14.0,
         "category": "billeteras",
         "delete": 0,
         "image_url":"productos/billetera_caballero.webp"
@@ -617,7 +733,7 @@ export const productos =[
         "cod_product": "BPA",
         "name": "Bandejas Para Accesorios",
         "units": 0,
-        "price": 29.0,
+        "price": 30.0,
         "category": "accesorios para dama",
         "delete": 0,
         "image_url":"productos/bandejas_de_accesorios_gris.webp"
@@ -665,14 +781,14 @@ export const productos =[
         "id": 55,
         "cod_product": "PDCF",
         "name": "Pulseras de Caballeo Finas",
-        "units": 7,
-        "price": 6.0,
+        "units": 3,
+        "price": 7.0,
         "category": "accesorios para caballeros",
         "delete": 0,
         "image_url":"productos/pulsera_de_caballero_inmantada_duo.webp"
     },
       {
-        "id": 55,
+        "id": 74,
         "cod_product": "CBG",
         "name": "Cartera Baguette Gamuzada",
         "units": 1,
@@ -793,7 +909,7 @@ export const productos =[
         "cod_product": "KPR",
         "name": "Kit para Rizos",
         "units": 1,
-        "price": 35.0,
+        "price": 28.0,
         "category": "haircare",
         "delete": 0,
         "image_url":"productos/kit_para_rizos.webp"
@@ -813,7 +929,7 @@ export const productos =[
         "cod_product": "LST",
         "name": "Lentes de Sol Transformers",
         "units": 3,
-        "price": 12.0,
+        "price": 15.0,
         "category": "lentes de sol",
         "delete": 0,
         "image_url":"productos/lentes_transformer.webp"
@@ -862,7 +978,7 @@ export const productos =[
                 "value": "#5e5e5eff",
                 "name": "Pata de gato",
                 "stock": 1,
-                "variant_price_adjust": 0.00,
+                "variant_price_adjust": 7.00,
                 "variant_image_url": "productos/cartuchera_pataGato_1.webp"
       },
          {
@@ -871,7 +987,7 @@ export const productos =[
                 "value": "#f8b2beff",
                 "name": "fresas",
                 "stock": 1,
-                "variant_price_adjust": 0.00,
+                "variant_price_adjust": 5.00,
                 "variant_image_url": "productos/cartuchera_fresas_2.webp"
       },
          {
@@ -880,7 +996,7 @@ export const productos =[
                 "value": "#7f8bf7ff",
                 "name": "Gatos",
                 "stock": 1,
-                "variant_price_adjust": 0.00,
+                "variant_price_adjust": 3.00,
                 "variant_image_url": "productos/cartuchera_gatos1_2.webp"
       }
         ]
@@ -908,7 +1024,7 @@ export const productos =[
         "cod_product": "SPAF",
         "name": "Sobres para dinero",
         "units": 3,
-        "price": 5.0,
+        "price": 7.0,
         "category": "papeleria",
         "delete": 0,
         "image_url":"productos/sobres_para_agenda_financiera.webp"
@@ -916,19 +1032,47 @@ export const productos =[
     {
         "id": 90,
         "cod_product": "BBI",
-        "name": "Bolsos Bandoleros Impermeables",
-        "units": 2,
-        "price": 15.0,
+        "name": "Cartera Ima",
+        "units": 3,
+        "price": 18.0,
         "category": "carteras y bolsos",
         "delete": 0,
-        "image_url":"productos/cartera_ima.webp"
+          "variants": [
+      {
+        "variant_id": "BBIC",
+        "type": "color",
+        "value": "#000000",
+        "name": "Crema",
+        "stock": 6,
+        "variant_price_adjust": 0.00,
+        "variant_image_url": "productos/cartera_ima_crema.webp"
+      },
+      {
+        "variant_id": "BBIN",
+        "type": "color",
+        "value": "#000000",
+        "name": "Negro",
+        "stock": 6,
+        "variant_price_adjust": 0.00,
+        "variant_image_url": "productos/cartera_ima_negro.webp"
+      }
+      ,
+      {
+        "variant_id": "BBIO",
+        "type": "color",
+        "value": "#000000",
+        "name": "Verde Oliva",
+        "stock": 6,
+        "variant_price_adjust": 0.00,
+        "variant_image_url": "productos/cartera_ima_verdeOliva.webp"
+      }]
     },
     {
         "id": 52,
         "cod_product": "TUC",
         "name": "Tarjetero Unisex de Cuerina",
         "units": 6,
-        "price": 10.0,
+        "price": 11.0,
         "category": "monederos",
         "delete": 0,
         "image_url":"productos/tarjetero_unisex.jpg"
@@ -938,7 +1082,7 @@ export const productos =[
         "cod_product": "LSDM",
         "name": "Lentes de Sol con detalles dorados",
         "units": 5,
-        "price": 12.0,
+        "price": 15.0,
         "category": "lentes de sol",
         "delete": 0,
          "variants":[
@@ -965,9 +1109,9 @@ export const productos =[
     {
         "id": 91,
         "cod_product": "MVP",
-        "name": "Monedero Verde Pequeño",
+        "name": "Monedero Lima",
         "units": 1,
-        "price": 12.0,
+        "price": 14.0,
         "category": "monederos",
         "delete": 0,
         "image_url": "productos/monedero_verde_sm.webp",
@@ -977,7 +1121,7 @@ export const productos =[
         "cod_product": "MRP",
         "name": "Monedero Rosa Palo con detalles de tachuela",
         "units": 1,
-        "price": 14.0,
+        "price": 15.0,
         "category": "monederos",
         "delete": 0,
         "image_url": "productos/monedero_rosa_palo_tachuelas.webp",
@@ -996,8 +1140,8 @@ export const productos =[
         "id": 94,
         "cod_product": "MRL",
         "name": "Monedero Lane",
-        "units": 0,
-        "price": 15.0,
+        "units": 4,
+        "price": 16.0,
         "category": "monederos",
         "delete": 0,
         "image_url": "productos/monedero_largo_rojo_bourbon.webp",

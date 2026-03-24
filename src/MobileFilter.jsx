@@ -47,6 +47,10 @@ export default function MobileFilter({filter,onSelectFilter}){
             value="Accesorios para Dama" 
         
             >Accesorios para Dama</option>
+                 <option 
+            value="Accesorios de Pareja" 
+        
+            >Accesorios de Pareja</option>
         </select>
         </div>
     )

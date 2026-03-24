@@ -7,6 +7,17 @@ import  { useState, useEffect } from 'react';
 import { FilterCategories } from './FilterCategories';
 import { ProductCard } from './ProductCard';
 import MobileFilter from './MobileFilter';
+ import ReactGA from "react-ga4";
+
+{/*GA STUFF*/}
+const GA_MEASUREMENT_ID = "G-QZHMMMJ5R4";
+ReactGA.initialize(GA_MEASUREMENT_ID);
+
+
+{/*GA STUFF*/}
+
+
+
 function App() {
   const [products, setProducts]=useState(productos)
   const [selectedFilter,setSelectedFilter] = useState('todo')
@@ -18,6 +29,19 @@ function App() {
 
     const localRate =handleGetLocalRate()
     const today = new Date().toISOString().split('T')[0];
+
+    {/*STUFF GOOGLE ANALYTICS START*/}
+   
+    const trackFilterSelection = (categoria, resultados) => {
+    console.log(`Enviando a GA: Filtro: ${categoria}, Resultados: ${resultados}`);
+    ReactGA.event({
+      category: "Filtros",
+      action: "Selección de Categoría",
+      label: categoria,
+      value: resultados,
+    });
+  };
+{/*STUFF GOOGLE ANALYTICS END*/}
 
   function handleSelectFilter(category){
     console.info(category)
@@ -40,6 +64,7 @@ function App() {
   }
 
 useEffect(()=>{
+    ReactGA.send({ hitType: "pageview", page: window.location.pathname });
 
      async function  getEuroRate(){
       try{
@@ -77,6 +102,8 @@ useEffect(()=>{
     if(filter.toLowerCase()==='todo'){ 
     
       setDisplayProducts(products)}
+      const numResultados = filter(p => p.cat === nuevaCategoria).length;
+      trackFilterSelection(nuevaCategoria, numResultados);
     else{
     const filteredProducts = products.filter(product=> product.category.toLowerCase() ===filter.toLowerCase())
   
@@ -84,6 +111,7 @@ useEffect(()=>{
   }
   }
   filterProducts(selectedFilter)
+  trackFilterSelection(selectedFilter, filtered.length);
 
 },[selectedFilter])
 
