@@ -1,3 +1,4 @@
+//last id 95
 export const productos =[
   
     {
@@ -84,15 +85,7 @@ export const productos =[
         "category": "monederos",
         "delete": 0,
         "variants":[
-              {
-        "variant_id": "MDCR",
-        "type": "color",
-        "value": "#db1e1eff",
-        "name": "Rojo",
-        "stock": 0,
-        "variant_price_adjust": 0.00,
-        "variant_image_url": "productos/monedero_corazon_rojo.webp"
-      },
+            
        {
         "variant_id": "MDCN",
         "type": "color",
@@ -101,10 +94,80 @@ export const productos =[
         "stock": 3,
         "variant_price_adjust": 0.00,
         "variant_image_url": "productos/monedero_corazon_negro.webp"
+      } ,
+        {
+        "variant_id": "MDCR",
+        "type": "color",
+        "value": "#db1e1eff",
+        "name": "Rojo",
+        "stock": 1,
+        "variant_price_adjust": 0.00,
+        "variant_image_url": "productos/monedero_corazon_rojo.webp"
       }
 
         ]
     },
+       {
+        "id": 80,
+        "cod_product": "GDD",
+        "name": "Gorra Girasoles",
+        "units": 0,
+        "price": 13.0,
+        "category": "accesorios para dama",
+        "delete": 0,
+        "image_url":"productos/gorra-de-dama-amarilla-mostaza.webp"
+    },
+    {
+        "id": 81,
+        "cod_product": "BPM",
+        "name": "Bolso para Maquillaje",
+        "units": 1,
+        "price": 27.0,
+        "category": "carteras y bolsos",
+        "delete": 0,
+        "image_url":"productos/bolso-para-maquillaje-grande.webp"
+    },
+    {
+        "id": 88,
+        "cod_product": "LDSR",
+        "name": "Lentes de Sol Running",
+        "units": 1,
+        "price": 10.0,
+        "category": "lentes de sol",
+        "delete": 0,
+        "image_url":"productos/lentes-de-sol-running.webp"
+    },
+     {
+        "id": 87,
+        "cod_product": "BVB",
+        "name": "Bolso Viajero Puffy",
+        "units": 1,
+        "price": 50.0,
+        "category": "carteras y bolsos",
+        "delete": 0,
+        "image_url":"productos/bolso-viajero-puffy-beige.webp"
+    },
+     {
+        "id": 95,
+        "cod_product": "BP",
+        "name": "Batidor Portatil",
+        "units": 1,
+        "price": 14.0,
+        "category": "tecnología",
+        "delete": 0,
+        "image_url":"productos/batidor-espumador-recargable.webp"
+    },
+     {
+        "id": 85,
+        "cod_product": "PP",
+        "name": "Porta Pasaporte",
+        "units": 1,
+        "price": 15.0,
+        "category": "carteras y bolsos",
+        "delete": 0,
+        "image_url":"productos/porta-pasaporte-negro.webp"
+    },
+     
     {
         "id": 69,
         "cod_product": "LLDP",
@@ -152,12 +215,21 @@ export const productos =[
         "category": "accesorios de pareja",
         "delete": 0,
          "variants": [
+            {
+        "variant_id": "CCME",
+        "type": "color",
+        "value": "#000000",
+        "name": "Collar Manos Entrelazadas",
+        "stock": 6,
+        "variant_price_adjust": 0.00,
+        "variant_image_url": "productos/collar_manos_entrelazadas.webp"
+      },
       {
         "variant_id": "CI",
         "type": "color",
         "value": "#000000",
         "name": "Corazon Inmantado",
-        "stock": 6,
+        "stock": 0,
         "variant_price_adjust": 14.00,
         "variant_image_url": "productos/corazon_inmantado.webp"
       },
@@ -170,23 +242,15 @@ export const productos =[
         "variant_price_adjust": 0.00,
         "variant_image_url": "productos/collar_pareja_puzzle.webp"
       },
-      {
-        "variant_id": "CCME",
-        "type": "color",
-        "value": "#000000",
-        "name": "Collar Manos Entrelazadas",
-        "stock": 6,
-        "variant_price_adjust": 0.00,
-        "variant_image_url": "productos/collar_manos_entrelazadas.webp"
-      }
+      
   ]
     },
      {
         "id": 77,
         "cod_product": "MC",
         "name": "Monedero Cat",
-        "units": 1,
-        "price": 16.0,
+        "units": 0,
+        "price": 15.0,
         "category": "monederos",
         "delete": 0,
         "image_url":"productos/monedero_Cat.webp"
@@ -215,7 +279,7 @@ export const productos =[
                
                     "value": "#000000",
                     "name": "Anillos Sol y Luna",
-                    "stock": 6,
+                    "stock": 0,
                     "variant_price_adjust": 0.00,
                     "variant_image_url": "productos/anillos_de_pareja.jpg"
                   }
@@ -235,7 +299,7 @@ export const productos =[
         "id": 18,
         "cod_product": "SCS",
         "name": "Skincare Set",
-        "units": 1,
+        "units": 0,
         "price": 14.0,
         "category": "skincare",
         "delete": 0,
@@ -357,7 +421,7 @@ export const productos =[
         "type": "color",
         "value": "#971414ff",
         "name": "Rojo ",
-        "stock": 0,
+        "stock": 2,
         "variant_price_adjust": 0.00,
         "variant_image_url": " productos/monedero_danna_rojo.webp",
       }
@@ -388,7 +452,7 @@ export const productos =[
         "id": 64,
         "cod_product": "CMB",
         "name": "Cartera Maxi",
-        "units": 2,
+        "units": 0,
         "price": 30.0,
         "category": "carteras y bolsos",
         "delete": 0,
@@ -398,7 +462,7 @@ export const productos =[
         "id": 67,
         "cod_product": "CNL",
         "name": "Cartera Lunch",
-        "units": 1,
+        "units": 0,
         "price": 30.0,
         "category": "carteras y bolsos",
         "delete": 0,
@@ -585,8 +649,8 @@ export const productos =[
         "id": 33,
         "cod_product": "AFP",
         "name": "Agenda Financiera ",
-        "units": 4,
-        "price": 26.0,
+        "units": 3,
+        "price": 23.0,
         "category": "papeleria",
         "delete": 0,
         "image_url": "productos/agendas_financieras.jpg",
@@ -600,7 +664,7 @@ export const productos =[
         "price": 23.0,
         "category": "carteras y bolsos",
         "delete": 0,
-        "image_url":"productos/tote_bag_negra.webp"
+        "image_url":"productos/cartera-tote-negra.webp"
     },
     {
         "id": 46,
@@ -771,7 +835,7 @@ export const productos =[
         "id": 75,
         "cod_product": "BM",
         "name": "Bolso para Manicurista",
-        "units": 0,
+        "units": 2,
         "price": 30.0,
         "category": "carteras y bolsos",
         "delete": 0,
@@ -943,15 +1007,7 @@ export const productos =[
         "category": "haircare",
         "delete": 0,
         "variants":[
-            {
-                "variant_id": "GDSR",
-                "type": "color",
-                "value": "#ff97d0ff",
-                "name": "Rosa",
-                "stock": 1,
-                "variant_price_adjust": 0.00,
-                "variant_image_url": "productos/gorros de satin_rosado.webp"
-      },
+          
        {
                 "variant_id": "GDSN",
                 "type": "color",
@@ -960,6 +1016,14 @@ export const productos =[
                 "stock": 1,
                 "variant_price_adjust": 0.00,
                 "variant_image_url": "productos/gorros de satin_negro.webp"
+      },  {
+                "variant_id": "GDSR",
+                "type": "color",
+                "value": "#ff97d0ff",
+                "name": "Rosa",
+                "stock": 0,
+                "variant_price_adjust": 0.00,
+                "variant_image_url": "productos/gorros de satin_rosado.webp"
       }
         ]
     },
@@ -972,15 +1036,7 @@ export const productos =[
         "category": "papeleria",
         "delete": 0,
         "variants":[
-            {
-                "variant_id": "CE1",
-                "type": "modelo",
-                "value": "#5e5e5eff",
-                "name": "Pata de gato",
-                "stock": 1,
-                "variant_price_adjust": 7.00,
-                "variant_image_url": "productos/cartuchera_pataGato_1.webp"
-      },
+           
          {
                 "variant_id": "CE2",
                 "type": "modelo",
@@ -998,7 +1054,16 @@ export const productos =[
                 "stock": 1,
                 "variant_price_adjust": 3.00,
                 "variant_image_url": "productos/cartuchera_gatos1_2.webp"
-      }
+      },
+       {
+                "variant_id": "CE1",
+                "type": "modelo",
+                "value": "#5e5e5eff",
+                "name": "Pata de gato",
+                "stock": 0,
+                "variant_price_adjust": 7.00,
+                "variant_image_url": "productos/cartuchera_pataGato_1.webp"
+      },
         ]
     },
    /* {

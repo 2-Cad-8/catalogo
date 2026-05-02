@@ -99,19 +99,17 @@ useEffect(()=>{
 
 useEffect(()=>{
   function filterProducts(filter){
+    let filteredProducts;
     if(filter.toLowerCase()==='todo'){ 
-    
       setDisplayProducts(products)}
-      const numResultados = filter(p => p.cat === nuevaCategoria).length;
-      trackFilterSelection(nuevaCategoria, numResultados);
     else{
-    const filteredProducts = products.filter(product=> product.category.toLowerCase() ===filter.toLowerCase())
-  
-   setDisplayProducts(filteredProducts)
-  }
-  }
+      filteredProducts = products.filter(product=> product.category.toLowerCase() ===filter.toLowerCase())
+    
+       setDisplayProducts(filteredProducts)
+       trackFilterSelection(selectedFilter, filteredProducts.length);
+    }
+    }
   filterProducts(selectedFilter)
-  trackFilterSelection(selectedFilter, filtered.length);
 
 },[selectedFilter])
 
