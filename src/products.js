@@ -1,4 +1,4 @@
-//last id 95
+//last id 99 NEXT AVAILABLE> 100
 export const productos =[
   
     {
@@ -17,7 +17,7 @@ export const productos =[
         "name": "Azul cielo",
         "stock": 6,
         "variant_price_adjust": 0.00,
-        "variant_image_url": "productos/tarjeteros_all.jpg"
+        "variant_image_url": "productos/tarjeteros.jpg"
       },
       {
         "variant_id": "TN",
@@ -26,7 +26,7 @@ export const productos =[
         "name": "Negro",
         "stock": 6,
         "variant_price_adjust": 0.00,
-        "variant_image_url": "productos/tarjeteros_all.jpg"
+        "variant_image_url": "productos/tarjeteros.jpg"
       },
         {
         "variant_id": "TVC",
@@ -35,7 +35,7 @@ export const productos =[
         "name": "Verde Lima",
         "stock": 6,
         "variant_price_adjust": 0.00,
-        "variant_image_url": "productos/tarjeteros_all.jpg"
+        "variant_image_url": "productos/tarjeteros.jpg"
       },
         {
         "variant_id": "TVO",
@@ -44,7 +44,7 @@ export const productos =[
         "name": "Verde Navidad",
         "stock": 2,
         "variant_price_adjust": 0.00,
-        "variant_image_url": "productos/tarjeteros_all.jpg"
+        "variant_image_url": "productos/tarjeteros.jpg"
       },
        {
         "variant_id": "TB",
@@ -53,7 +53,7 @@ export const productos =[
         "name": "Beige",
         "stock": 6,
         "variant_price_adjust": 0.00,
-        "variant_image_url": "productos/tarjeteros_all.jpg"
+        "variant_image_url": "productos/tarjeteros.jpg"
       },
        {
         "variant_id": "TRA",
@@ -62,7 +62,7 @@ export const productos =[
         "name": "Rosa",
         "stock": 6,
         "variant_price_adjust": 0.00,
-        "variant_image_url": "productos/tarjeteros_all.jpg"
+        "variant_image_url": "productos/tarjeteros.jpg"
       },
        {
         "variant_id": "TRO",
@@ -71,11 +71,31 @@ export const productos =[
         "name": "Rojo",
         "stock": 6,
         "variant_price_adjust": 0.00,
-        "variant_image_url": "productos/tarjeteros_all.jpg"
+        "variant_image_url": "productos/tarjeteros.jpg"
       }
     ],
     },
-   
+
+   {
+        "id":99,
+        "cod_product": "BPL",
+        "name": "Base para Laptop",
+        "units": 1,
+        "price": 5.0,
+        "category": "tecnología",
+        "delete": 0,
+        "image_url":"productos/base_para_laptop.png"
+    },
+    {
+        "id":98,
+        "cod_product": "RPDRG",
+        "name": "Reloj de Dama",
+        "units": 1,
+        "price": 18.0,
+        "category": "accesorios para dama",
+        "delete": 0,
+        "image_url":"productos/reloj_dama_rose_gold.png"
+    },
     {
         "id": 16,
         "cod_product": "MDCR",
@@ -100,7 +120,7 @@ export const productos =[
         "type": "color",
         "value": "#db1e1eff",
         "name": "Rojo",
-        "stock": 1,
+        "stock": 0,
         "variant_price_adjust": 0.00,
         "variant_image_url": "productos/monedero_corazon_rojo.webp"
       }
@@ -110,12 +130,31 @@ export const productos =[
        {
         "id": 80,
         "cod_product": "GDD",
-        "name": "Gorra Girasoles",
-        "units": 0,
+        "name": "Gorras de Dama",
+        "units": 1,
         "price": 13.0,
         "category": "accesorios para dama",
         "delete": 0,
-        "image_url":"productos/gorra-de-dama-amarilla-mostaza.webp"
+        "variants": [
+      {
+        "variant_id": "GDDG",
+        "type": "color",
+        "value": "#C49B12",
+        "name": "Gorra Girasoles",
+        "stock": 6,
+        "variant_price_adjust": 0.00,
+        "variant_image_url": "productos/gorra-de-dama-amarilla-mostaza.webp"
+      },
+      {
+        "variant_id": "GDDP",
+        "type": "color",
+        "value": "#FFFFE8",
+        "name": "Gorra Doggy",
+        "stock": 6,
+        "variant_price_adjust": 0.00,
+        "variant_image_url": "productos/Gorra_doggy.png"
+      },
+        ]
     },
     {
         "id": 81,
@@ -142,16 +181,26 @@ export const productos =[
         "cod_product": "BVB",
         "name": "Bolso Viajero Puffy",
         "units": 1,
-        "price": 50.0,
+        "price": 45.0,
         "category": "carteras y bolsos",
         "delete": 0,
         "image_url":"productos/bolso-viajero-puffy-beige.webp"
     },
      {
+        "id": 97,
+        "cod_product": "BPLF",
+        "name": "Bolso Para Laptop",
+        "units": 1,
+        "price": 45.0,
+        "category": "carteras y bolsos",
+        "delete": 0,
+        "image_url":"productos/bolso_para_laptop_beige.webp"
+    },
+     {
         "id": 95,
         "cod_product": "BP",
         "name": "Batidor Portatil",
-        "units": 1,
+        "units": 0,
         "price": 14.0,
         "category": "tecnología",
         "delete": 0,
@@ -173,7 +222,7 @@ export const productos =[
         "cod_product": "LLDP",
         "name": "Llaveros de Pareja",
         "units": 2,
-        "price": 12.0,
+        "price": 6.0,
         "category": "accesorios de pareja",
         "delete": 0,
         "variants": [
@@ -270,7 +319,7 @@ export const productos =[
                     "value": "#000000",
                     "name": "Anillos Principito",
                     "stock": 6,
-                    "variant_price_adjust": 14.00,
+                    "variant_price_adjust": 8.00,
                     "variant_image_url": "productos/anillos_principito.webp"
                   },
                   {
@@ -412,7 +461,7 @@ export const productos =[
         "type": "color",
         "value": "#881b45ff",
         "name": "Rosa Palo",
-        "stock": 2,
+        "stock": 0,
         "variant_price_adjust": 0.00,
         "variant_image_url": "productos/monedero_danna_rosa_palo.webp"
       },
@@ -442,7 +491,7 @@ export const productos =[
         "id": 63,
         "cod_product": "CMPB",
         "name": "Cartera Marron Pequeña",
-        "units": 1,
+        "units": 0,
         "price": 20.0,
         "category": "carteras y bolsos",
         "delete": 0,
@@ -504,7 +553,7 @@ export const productos =[
         "cod_product": "CRMT",
         "name": "Cartera Terracota",
         "units": 1,
-        "price": 28.0,
+        "price": 27.0,
         "category": "carteras y bolsos",
         "delete": 0,
         "image_url":"productos/cartera_marron_terracota_mediana.webp"
@@ -543,9 +592,9 @@ export const productos =[
         "type": "color",
         "value": "#000000",
         "name": "Negro",
-        "stock": 0,
-        "variant_price_adjust": 0.00,
-        "variant_image_url": "productos/correa_dama_negra.webp"
+        "stock": 3,
+        "variant_price_adjust": 12.00,
+        "variant_image_url": "productos/correas_negras.png"
       },
         
                {
@@ -608,7 +657,7 @@ export const productos =[
     {
         "id": 78,
         "cod_product": "CNN",
-        "name": "Cartera de Nuditos",
+        "name": "Cartera Nuva",
         "units": 2,
         "price": 30.0,
         "category": "carteras y bolsos",
@@ -630,7 +679,7 @@ export const productos =[
         "name": "Marron Chocolate",
         "stock": 6,
         "variant_price_adjust": 0.00,
-        "variant_image_url": "productos/cartera_nuditos_marron.webp"
+        "variant_image_url": "productos/cartera_nuva_marron.jpg"
       }
       
         ]
@@ -638,9 +687,9 @@ export const productos =[
     {
         "id": 31,
         "cod_product": "LSDA",
-        "name": "Lentes de Sol Tipo Aviador",
+        "name": "Lentes de Sol Aviador",
         "units": 23,
-        "price": 12.0,
+        "price": 7.0,
         "category": "lentes de sol",
         "delete": 0,
         "image_url":"productos/lentes_aviador.webp"
@@ -786,7 +835,7 @@ export const productos =[
         "cod_product": "BDC",
         "name": "Billeteras de Caballero",
         "units": 3,
-        "price": 14.0,
+        "price": 13.50,
         "category": "billeteras",
         "delete": 0,
         "image_url":"productos/billetera_caballero.webp"
@@ -796,7 +845,7 @@ export const productos =[
         "id": 25,
         "cod_product": "BPA",
         "name": "Bandejas Para Accesorios",
-        "units": 0,
+        "units": 2,
         "price": 30.0,
         "category": "accesorios para dama",
         "delete": 0,
@@ -866,27 +915,62 @@ export const productos =[
         "cod_product": "PDC",
         "name": "Pulseras de Caballero",
         "units": 10,
-        "price": 12.0,
+        "price": 11.0,
         "category": "accesorios para caballeros",
         "delete": 0,
         "variants":[
             {
-                "variant_id": "PDC1",
+                "variant_id": "PDCJ",
                 "type": "color",
                 "value": "#000000",
-                "name": "Tipo 1",
+                "name": "Modelo J",
                 "stock": 6,
                 "variant_price_adjust": 0.00,
-                "variant_image_url": "productos/pulseras_caballero_tipo1.webp"
+                "variant_image_url": "productos/pulsera_de_Caballero_trenzada_marron.png"
+      }, {
+                "variant_id": "PDCR",
+                "type": "color",
+                "value": "#000000",
+                "name": "Modelo R",
+                "stock": 6,
+                "variant_price_adjust": 0.00,
+                "variant_image_url": "productos/pulsera_de_Caballero_negra_detalles_plateados_r.png"
       },
-         {
-                "variant_id": "PDC2",
+      {
+                "variant_id": "PDCMP",
                 "type": "color",
                 "value": "#000000",
-                "name": "Tipo 2",
+                "name": "Modelo MP",
                 "stock": 6,
                 "variant_price_adjust": 0.00,
-                "variant_image_url": "productos/pulseras_caballero_tipo2.webp"
+                "variant_image_url": "productos/pulsera_de_Caballero_marron_detalles_plateados.png"
+      },
+      {
+                "variant_id": "PDCMY",
+                "type": "color",
+                "value": "#000000",
+                "name": "Modelo Y",
+                "stock": 6,
+                "variant_price_adjust": 0.00,
+                "variant_image_url": "productos/pulsera_De_hombre_y.jpg"
+      },
+        {
+                "variant_id": "PDCMB",
+                "type": "color",
+                "value": "#000000",
+                "name": "Modelo B",
+                "stock": 6,
+                "variant_price_adjust": 0.00,
+                "variant_image_url": "productos/pulsera_de_hombre_bet.jpg"
+      },
+        {
+                "variant_id": "PDCMNG",
+                "type": "color",
+                "value": "#000000",
+                "name": "Modelo NG",
+                "stock": 6,
+                "variant_price_adjust": 0.00,
+                "variant_image_url": "productos/pulsera_hombres_negra_grande.jpg"
       }
         ]
     },
@@ -924,7 +1008,7 @@ export const productos =[
         "value": "#000000",
         "name": "bolsas medianas",
         "stock": 1,
-        "variant_price_adjust": 0.00,
+        "variant_price_adjust": 10.00,
         "variant_image_url": "productos/bolsas_holograficas.webp"
       },
                {
@@ -933,7 +1017,7 @@ export const productos =[
         "value": "#000000",
         "name": "bolsas pequeñas",
         "stock": 1,
-        "variant_price_adjust": 0.00,
+        "variant_price_adjust": 7.00,
         "variant_image_url": "productos/bolsas_holograficas.webp"
       }
         ]
@@ -1220,13 +1304,34 @@ export const productos =[
         "price": 6.0,
         "category": "haircare",
         "delete": 0
-    },  {
-        "id": 70,
-        "cod_product": "FLAN",
-        "name": "Funda para Laptop Acolchada Negra",
+    }, */ {
+        "id": 96,
+        "cod_product": "FPL",
+        "name": "Funda para Laptop",
         "units": 1,
         "price": 16.0,
         "category": "carteras y bolsos",
-        "delete": 0
-    },*/
+        "delete": 0,
+         "variants": [
+            
+              {
+                "variant_id": "FPLE",
+                "type": "color",
+                "value": "#000000",
+                "name": "Estampada",
+                "stock": 6,
+                "variant_price_adjust": 18.00,
+                "variant_image_url": "productos/funda_laptop_estampada.jpg"
+              },
+                {
+                "variant_id": "FPLN",
+                "type": "color",
+                "value": "#000000",
+                "name": "Negro",
+                "stock": 0,
+                "variant_price_adjust": 16.00,
+                "variant_image_url": "productos/funda_laptop_negra.png"
+              },
+        ]
+    },
 ]

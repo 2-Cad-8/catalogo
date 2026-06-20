@@ -65,7 +65,7 @@ export const ProductCard = ({ product, rate }) => {
   };
 
   return (
-    <div className="card w-45 xl:w-70 bg-white shadow-xl hover:shadow-2xl transition duration-300 border border-gray-100 h-xs flex flex-col">
+    <div className="card w-39.5 xl:w-70 bg-white shadow-xl hover:shadow-2xl transition duration-300 border border-gray-100 h-xs flex flex-col">
 
       {/* Imagen del Producto */}
       <figure className="relative h-40 xl:h-60 overflow-hidden">
@@ -84,7 +84,7 @@ export const ProductCard = ({ product, rate }) => {
 
       </figure>
 
-      <div className="card-body p-5 grow flex flex-col">
+      <div className="card-body p-3 grow flex flex-col">
 
         {/* Nombre y Precio */}
         <div className='flex justify-between gap-x-4'>
