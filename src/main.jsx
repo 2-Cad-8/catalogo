@@ -6,7 +6,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-      <BrowserRouter >
+      <BrowserRouter>
       <Routes>
           <Route path="/catalogo" element={<App />}>
           <Route path="/catalogo/:category" element={<App />}></Route>
