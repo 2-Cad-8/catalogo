@@ -840,7 +840,7 @@ export const productos =[
         "id": 1,
         "cod_product": "MLR",
         "name": "Monedero Lux ",
-        "units": 8,
+        "units": 0,
         "price": 20.0,
         "category": "monederos",
         "delete": 0,
@@ -850,7 +850,7 @@ export const productos =[
         "type": "color",
         "value": "#b60b0bff",
         "name": "Rojo",
-        "stock": 8,
+        "stock": 0,
         "variant_price_adjust": 0.00,
         "variant_image_url": "productos/MLR.webp"
       },
@@ -859,7 +859,7 @@ export const productos =[
         "type": "color",
         "value": "#000000",
         "name": "Negro",
-        "stock": 1,
+        "stock": 0,
         "variant_price_adjust": 0.00,
         "variant_image_url": "https://placehold.co/400x300/6B7280/ffffff?text=Gris+Grafito"
       }
