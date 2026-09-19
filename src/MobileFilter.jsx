@@ -1,16 +1,18 @@
+import { Link } from "react-router-dom";
+
 export default function MobileFilter({filter,onSelectFilter}){
     return(
         <div className="p-4  max-w-sm">
 
         <select className="select  rounded-xl dark:bg-white" defaultValue={filter} onChange={(e)=> onSelectFilter(e.target.value)}>
-            <option 
+          <Link to={`/:todo`}>  <option 
             value="Todo" 
             
-            >Todo</option>
-            <option 
+            >Todo </option></Link>
+          <Link to={`/:Carteras y Bolsos<`}>  <option 
             value="Carteras y Bolsos" 
             
-            >Carteras y Bolsos</option>
+            >Carteras y Bolsos</option> </Link>
             <option 
             value="Monederos" 
            
@@ -35,10 +37,7 @@ export default function MobileFilter({filter,onSelectFilter}){
             value="Accesorios para Termos" 
       
             >Accesorios para Termos</option>
-            <option 
-            value="Skincare" 
-         
-            >Skincare</option>
+           
             <option 
             value="Haircare" 
 
