@@ -9,7 +9,7 @@ export default function NavBar(){
         <span><FontAwesomeIcon icon={faInstagram} size='lg'/></span>
       </a>
       <a href='https://www.tiktok.com/@dalazshopve?_r=1&_t=ZM-92goKgChWQN' className='btn btn-circle dark:text-slate-700 bg-beige border-none hover:bg-slate-700 hover:text-white'>
-        <span><FontAwesomeIcon icon={faTiktok} size='lg'/></span>
+        <span><FontAwesomeIc icon={faTiktok} size='lg'/></span>
       </a>
         
       </div>
