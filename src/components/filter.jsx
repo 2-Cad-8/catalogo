@@ -61,7 +61,7 @@ export default function Filter({ filter, onSelectFilter }) {
         <div className="absolute left-4 right-4 mt-2 bg-white dark:bg-white border border-slate-200 rounded-xl shadow-xl z-50 max-h-64 overflow-y-auto py-2 divide-y divide-slate-100">
           {categories.map((cat) => {
             const isSelected = currentCategoryObj.value.toLowerCase() === cat.value.toLowerCase();
-            const targetPath = cat.param === "todo" ? "/catalogo/" : `/catalogo/${cat.value}`;
+            const targetPath = cat.param === "todo" ? "/" : `/${cat.value}`;
 
             return (
               <Link
