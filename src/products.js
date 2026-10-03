@@ -518,7 +518,7 @@ export const productos =[
         "type": "color",
         "value": "#971414ff",
         "name": "Rojo ",
-        "stock": 2,
+        "stock": 0,
         "variant_price_adjust": 0.00,
         "variant_image_url": " productos/monedero_danna_rojo.webp",
       }
