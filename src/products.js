@@ -1,4 +1,4 @@
-//last id 106 NEXT AVAILABLE> 107
+//last id 108 NEXT AVAILABLE> 109
 
 export const productos =[
   
@@ -6,13 +6,33 @@ export const productos =[
         "id": 94,
         "cod_product": "MRL",
         "name": "Monedero Lane",
-        "units": 4,
+        "units": 0,
         "price": 16.0,
         "category": "monederos",
         "delete": 0,
         "image_url": "productos/monedero_largo_rojo_bourbon.webp",
       }
     ,
+    {
+        "id": 107,
+        "cod_product": "MCM",
+        "name": "Monedero Carmen",
+        "units": 1,
+        "price": 15.0,
+        "category": "monederos",
+        "delete": 0,
+        "image_url": "productos/monedero_carmen.webp",
+      },
+      {
+        "id": 108,
+        "cod_product": "MN",
+        "name": "Monedero Nadia",
+        "units": 1,
+        "price": 14.0,
+        "category": "monederos",
+        "delete": 0,
+        "image_url": "productos/monedero_nadia.webp",
+      },
     {
         "id": 11,
         "cod_product": "TA",
@@ -1058,11 +1078,11 @@ export const productos =[
         "id": 54,
         "cod_product": "CDC",
         "name": "Cadenas de Caballero",
-        "units": 0,
+        "units": 2,
         "price": 8.0,
         "category": "accesorios para caballeros",
         "delete": 0,
-        "image_url":"productos/cadena_de_Caballero.webp"
+        "image_url":"productos/cadenas_para_caballero.webp"
     },
     {
         "id": 57,
