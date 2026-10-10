@@ -65,7 +65,7 @@ export const ProductCard = ({ product, rate }) => {
   };
 
   return (
-    <div className="card w-39.5 xl:w-70 bg-white shadow-xl hover:shadow-2xl transition duration-300 border border-gray-100 h-xs flex flex-col">
+    <div className="card w-38 lg:w-70 2xl:w-60 bg-white shadow-xl hover:shadow-2xl transition duration-300 border border-gray-100 h-xs flex flex-col">
 
       {/* Imagen del Producto */}
       <figure className="relative h-40 xl:h-60 overflow-hidden">
@@ -91,11 +91,11 @@ export const ProductCard = ({ product, rate }) => {
 
           <p className="text-xl xl:text-3xl font-bold text-slate-700 mb-2">${(selectedVariant?.variant_price_adjust || product.price)}</p>
         </div>
-        <h2 className="card-title text-gray-800 text-md xl:text-xl mb-1">{product.name}</h2>
+        <h2 className="card-title text-gray-800 text-sm xl:text-xl mb-1">{product.name}</h2>
         {/* Descripción */}
 
 
-        <p className="text-sm text-gray-500   h-4 overflow-hidden">Para mas informacion haz clic en comprar</p>
+        <p className="text-xs md:text-sm text-gray-500  h-5 overflow-hidden ">Para más información haz clic en comprar</p>
 
 
         {/* Selectores de Variantes (Renderizado Condicional) */}

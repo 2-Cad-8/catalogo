@@ -770,7 +770,7 @@ export const productos =[
         "price": 23.0,
         "category": "papeleria",
         "delete": 0,
-        "image_url": "productos/agendas_financieras.webp",
+        "image_url": "productos/agenda_financiera.webp",
 
     },
     {
@@ -903,10 +903,10 @@ export const productos =[
         "cod_product": "BDC",
         "name": "Billetera de Caballero",
         "units": 3,
-        "price": 13.50,
+        "price": 12.00,
         "category": "billeteras",
         "delete": 0,
-        "image_url":"productos/billetera_caballero.webp"
+        "image_url":"productos/billetera_canguro.webp"
         
     },
      {
@@ -985,7 +985,7 @@ export const productos =[
         "cod_product": "BPL",
         "name": "Base para Laptop",
         "units": 2,
-        "price": 10.0,
+        "price": 12.0,
         "category": "tecnología",
         "delete": 0,
         "image_url":"productos/base_para_laptop.webp"
