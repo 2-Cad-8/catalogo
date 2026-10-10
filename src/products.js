@@ -1,18 +1,27 @@
-//last id 108 NEXT AVAILABLE> 109
+//last id 109 NEXT AVAILABLE> 110
 
 export const productos =[
-  
-     {
-        "id": 94,
-        "cod_product": "MRL",
-        "name": "Monedero Lane",
-        "units": 0,
-        "price": 16.0,
+   {
+        "id": 1,
+        "cod_product": "MLR",
+        "name": "Monedero Lux ",
+        "units": 3,
+        "price": 20.0,
         "category": "monederos",
         "delete": 0,
-        "image_url": "productos/monedero_largo_rojo_bourbon.webp",
-      }
-    ,
+        "image_url":"productos/MLR.webp"
+    },
+   {
+        "id": 109,
+        "cod_product": "MDP",
+        "name": "Desmenuzador de Pollo",
+        "units": 2,
+        "price": 18.0,
+        "category": "tecnología",
+        "delete": 0,
+        "image_url":"productos/mechador.webp"
+    },
+    
     {
         "id": 107,
         "cod_product": "MCM",
@@ -327,11 +336,20 @@ export const productos =[
         "id": 79,
         "cod_product": "CDP",
         "name": "Collares de Pareja",
-        "units": 0,
+        "units": 1,
         "price": 12.0,
         "category": "accesorios de pareja",
         "delete": 0,
          "variants": [
+          {
+        "variant_id": "CR",
+        "type": "color",
+        "value": "#000000",
+        "name": "Collar de rompecabezas",
+        "stock": 1,
+        "variant_price_adjust": 0.00,
+        "variant_image_url": "productos/collar_puzzle.webp"
+      },
             {
         "variant_id": "CCME",
         "type": "color",
@@ -350,15 +368,7 @@ export const productos =[
         "variant_price_adjust": 14.00,
         "variant_image_url": "productos/corazon_inmantado.webp"
       },
-      {
-        "variant_id": "CR",
-        "type": "color",
-        "value": "#000000",
-        "name": "Collar de rompecabezas",
-        "stock": 0,
-        "variant_price_adjust": 0.00,
-        "variant_image_url": "productos/collar_pareja_puzzle.webp"
-      },
+      
       
   ]
     },
@@ -856,36 +866,7 @@ export const productos =[
         "delete": 0,
         "image_url":"productos/straps_gruesos.webp"
     },
-    {
-        "id": 1,
-        "cod_product": "MLR",
-        "name": "Monedero Lux ",
-        "units": 0,
-        "price": 20.0,
-        "category": "monederos",
-        "delete": 0,
-        "variants":[
-          {
-        "variant_id": "MLR",
-        "type": "color",
-        "value": "#b60b0bff",
-        "name": "Rojo",
-        "stock": 0,
-        "variant_price_adjust": 0.00,
-        "variant_image_url": "productos/MLR.webp"
-      },
-            {
-        "variant_id": "MLN",
-        "type": "color",
-        "value": "#000000",
-        "name": "Negro",
-        "stock": 0,
-        "variant_price_adjust": 0.00,
-        "variant_image_url": "https://placehold.co/400x300/6B7280/ffffff?text=Gris+Grafito"
-      }
-      
-        ]
-    },
+   
     {
         "id": 30,
         "cod_product": "LSDP",
@@ -1468,4 +1449,15 @@ export const productos =[
         "delete": 0,
         "image_url":"productos/anillo-piedra-cuadrada-plateado.webp"
     },
+     {
+        "id": 94,
+        "cod_product": "MRL",
+        "name": "Monedero Lane",
+        "units": 0,
+        "price": 16.0,
+        "category": "monederos",
+        "delete": 0,
+        "image_url": "productos/monedero_largo_rojo_bourbon.webp",
+      }
+    ,
 ]
